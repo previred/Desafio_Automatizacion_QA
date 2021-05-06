@@ -55,7 +55,7 @@ Realice el siguiente flujo utilizando Selenium con el lenguaje de programaci&oac
 
  - Archivo/s de salida (Reporte, log, evidencias tomadas) 
 
- - La soluci&oacute;n debe contener un README.md y ser enviada v&iacute;a un pull request a este repositorio. 
+ - La soluci&oacute;n debe contener un README.md indicando los prerequisitos, intrucciones para su ejecuci&oacute;n y descripci&oacute;n del flujo automatizado y ser enviada v&iacute;a un pull request a este repositorio. 
 
  - En el detalle del commit debes indicar los siguientes datos  
    - Nombre Completo. 
