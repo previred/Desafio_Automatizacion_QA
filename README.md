@@ -1,66 +1,80 @@
-# Desaf&iacute;o Automatizaci&oacute;n QA
+# Desafio de automatización
 
-Realice el siguiente flujo utilizando Selenium con el lenguaje de programaci&oacute;n que prefiera.  
+## Pre-requisitos 📋
 
- - Ingresar a sitio [automationpractice.com](http://automationpractice.com/)
-
- - A&ntilde;adir al carrito de compra una blusa negra talla L 
-
- - A&ntilde;adir al carrito un vestido de verano largo estampado, de talla S y cualquier color 
-
- - Proceder a realizar la compra 
-
- - Realizar login con credenciales obtenidas de un archivo externo a su elecci&oacute;n (no importan las credenciales, basta que sea un email con estructura v&aacute;lida y contrase&ntilde;a) 
-
- - Crear una cuenta 
-
- - Continuar con la compra y llegar a orden completa 
-
- - Visitar historia de &oacute;rdenes y descargar PDF 
-
- - Cerrar sesi&oacute;n 
-
- 
-
-# Validaciones m&iacute;nimas 
-
- - Sacar evidencia de cada producto a&ntilde;adido en carrito 
-
- - Validar los art&iacute;culos en carrito sean “Blouse”, “Summer Dress”  
-
- - Evidencia de creaci&oacute;n de la cuenta 
-
- - Evidencia de paso de Shipping  
-
- - Validar que costo de despacho sea $2.00 
-
- - Evidencia de costo final del carrito 
-
- - Evidencia de orden completa 
-
- - Evidencia de apartado “Order History” y validar estado de la compra “On backorder” 
-
- 
-
-# Punto extra 
-
- - Seleccionar color del vestido de forma aleatoria 
-
- - Se ponderar&aacute; la cantidad de valores ingresados en duro en el c&oacute;digo 
-
- 
-# Entregables 
-
- - Archivo de entrada para la ejecuci&oacute;n de la automatizaci&oacute;n 
-
- - Archivo/s de salida (Reporte, log, evidencias tomadas) 
-
- - La soluci&oacute;n debe contener un README.md y ser enviada v&iacute;a un pull request a este repositorio. 
-
- - En el detalle del commit debes indicar los siguientes datos  
-   - Nombre Completo. 
-   - Correo Electr&oacute;nico. 
+- La automatización fue hecha usando java e IntelliJ.
+- Los datos de entrada para la automatización estan en el archivo config.properties en src\test\resources.
+- Se debe modificar el correo en config.properties para cada ejecución ya que se creara una cuenta nueva.
+- Este es el contenido del archivo properties: 
 
 
-# NOTA: 
-El sitio de prueba suele presentar error de l&iacute;mite de accesos, basta repetir la consulta para poder llegar la opci&oacute;n requerida.
+```
+url=http://automationpractice.com/index.php
+navegador=chrome
+primerProducto=Blouse
+colorBlusa=black
+tallaBlusa=L
+segundoProducto=Printed Summer Dress
+colorVestido=aleatorio
+tallaVestido=S
+costoDespacho=$2.00
+nombre=Juan
+apellido=Perez
+correo=prueba114@yahoo.com
+clave=1a2b3c
+direccion=Street 876
+ciudad=Orlando
+estado=Florida
+codigoPostal=12345
+telefonoMovil=364552723
+```
+
+## Ejecutando las pruebas ⚙️
+
+- Para la ejecución es desde el fuente Runner.java en \src\test\java\runner
+
+```
+package runner;
+
+import com.vimalselvam.cucumber.listener.Reporter;
+import cucumber.api.CucumberOptions;
+import cucumber.api.junit.Cucumber;
+
+import org.junit.AfterClass;
+import org.junit.runner.RunWith;
+
+@RunWith(Cucumber.class)
+@CucumberOptions(
+        features = "src/test/java/features/Compra.feature",
+        glue = {"steps"},
+        tags = {"@prueba"},
+        plugin = {"com.vimalselvam.cucumber.listener.ExtentCucumberFormatter:target/cucumber-report/report.html"}
+)
+public class Runner {
+
+    @AfterClass
+    public static void writeExtentReport() {
+        Reporter.loadXMLConfig("src/extent-config.xml");
+    }
+}
+
+```
+
+
+## Reportes y log 📄
+
+- El reporte de ejecución es un html que se puede abrir con cualquier navegador. Esta ubicado en: target\cucumber-report\report.html
+- El log se puede ver en el archivo app-info.log ubicado en la carpeta logs
+
+```
+[INFO ] 2021-05-08 15:11:47.775 [main] SummaryPage:40 - Costo del despacho validado correctamente: $2.00
+[INFO ] 2021-05-08 15:11:47.819 [main] SummaryPage:46 - Total del carrito: $57.98
+[INFO ] 2021-05-08 15:12:00.143 [main] PaymentPage:36 - Costo del despacho en Payment validado correctamente: $2.00
+[INFO ] 2021-05-08 15:12:00.190 [main] PaymentPage:41 - Pago Total en Payment: $57.98
+[INFO ] 2021-05-08 15:12:03.723 [main] PaymentPage:59 - Orden fue completada satisfactoriamente
+[INFO ] 2021-05-08 15:12:08.713 [main] OrderHistoryPage:24 - Estado validado: On backorder
+[INFO ] 2021-05-08 15:12:08.877 [main] OrderHistoryPage:31 - Hizo clic para descargar el PDF
+```
+
+---
+Cualquier duda me pueden contactar por: rafaelterrevoli@gmail.com 😊

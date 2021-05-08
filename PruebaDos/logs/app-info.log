@@ -1,0 +1,64 @@
+[INFO ] 2021-05-08 15:02:29.708 [main] QuickViewPage:56 - El color aleatorio es: blue
+[INFO ] 2021-05-08 15:02:33.615 [main] SummaryPage:24 - Esta en el carrito el articulo: Blouse
+[INFO ] 2021-05-08 15:02:33.615 [main] SummaryPage:25 - Primer articulo: Blouse
+SKU : demo_2
+Color : Black, Size : L
+[INFO ] 2021-05-08 15:02:33.670 [main] SummaryPage:32 - Esta en el carrito el articulo: Printed Summer Dress
+[INFO ] 2021-05-08 15:02:33.671 [main] SummaryPage:33 - Segundo articulo: Printed Summer Dress
+SKU : demo_5
+Color : Blue, Size : S
+[INFO ] 2021-05-08 15:02:33.732 [main] SummaryPage:40 - Costo del despacho validado correctamente: $2.00
+[INFO ] 2021-05-08 15:02:33.784 [main] SummaryPage:46 - Total del carrito: $57.98
+[ERROR] 2021-05-08 15:02:38.378 [main] PaymentPage:38 - Costo del despacho incorrecto: 
+[INFO ] 2021-05-08 15:02:38.422 [main] PaymentPage:41 - Pago Total en Payment: 
+[INFO ] 2021-05-08 15:02:42.965 [main] PaymentPage:59 - Orden fue completada satisfactoriamente
+[INFO ] 2021-05-08 15:02:45.908 [main] OrderHistoryPage:24 - Estado validado: On backorder
+[INFO ] 2021-05-08 15:02:46.061 [main] OrderHistoryPage:31 - Hizo clic para descargar el PDF
+[INFO ] 2021-05-08 15:08:21.980 [main] QuickViewPage:56 - El color aleatorio es: orange
+[INFO ] 2021-05-08 15:08:25.920 [main] SummaryPage:24 - Esta en el carrito el articulo: Blouse
+[INFO ] 2021-05-08 15:08:25.920 [main] SummaryPage:25 - Primer articulo: Blouse
+SKU : demo_2
+Color : Black, Size : L
+[INFO ] 2021-05-08 15:08:25.968 [main] SummaryPage:32 - Esta en el carrito el articulo: Printed Summer Dress
+[INFO ] 2021-05-08 15:08:25.968 [main] SummaryPage:33 - Segundo articulo: Printed Summer Dress
+SKU : demo_5
+Color : Orange, Size : S
+[INFO ] 2021-05-08 15:08:26.025 [main] SummaryPage:40 - Costo del despacho validado correctamente: $2.00
+[INFO ] 2021-05-08 15:08:26.068 [main] SummaryPage:46 - Total del carrito: $57.98
+[INFO ] 2021-05-08 15:08:33.963 [main] PaymentPage:36 - Costo del despacho en Payment validado correctamente: $2.00
+[INFO ] 2021-05-08 15:08:34.006 [main] PaymentPage:41 - Pago Total en Payment: $57.98
+[INFO ] 2021-05-08 15:08:38.832 [main] PaymentPage:59 - Orden fue completada satisfactoriamente
+[INFO ] 2021-05-08 15:08:43.008 [main] OrderHistoryPage:24 - Estado validado: On backorder
+[INFO ] 2021-05-08 15:08:43.162 [main] OrderHistoryPage:31 - Hizo clic para descargar el PDF
+[INFO ] 2021-05-08 15:11:40.782 [main] QuickViewPage:56 - El color aleatorio es: orange
+[INFO ] 2021-05-08 15:11:47.675 [main] SummaryPage:24 - Esta en el carrito el articulo: Blouse
+[INFO ] 2021-05-08 15:11:47.675 [main] SummaryPage:25 - Primer articulo: Blouse
+SKU : demo_2
+Color : Black, Size : L
+[INFO ] 2021-05-08 15:11:47.721 [main] SummaryPage:32 - Esta en el carrito el articulo: Printed Summer Dress
+[INFO ] 2021-05-08 15:11:47.721 [main] SummaryPage:33 - Segundo articulo: Printed Summer Dress
+SKU : demo_5
+Color : Orange, Size : S
+[INFO ] 2021-05-08 15:11:47.775 [main] SummaryPage:40 - Costo del despacho validado correctamente: $2.00
+[INFO ] 2021-05-08 15:11:47.819 [main] SummaryPage:46 - Total del carrito: $57.98
+[INFO ] 2021-05-08 15:12:00.143 [main] PaymentPage:36 - Costo del despacho en Payment validado correctamente: $2.00
+[INFO ] 2021-05-08 15:12:00.190 [main] PaymentPage:41 - Pago Total en Payment: $57.98
+[INFO ] 2021-05-08 15:12:03.723 [main] PaymentPage:59 - Orden fue completada satisfactoriamente
+[INFO ] 2021-05-08 15:12:08.713 [main] OrderHistoryPage:24 - Estado validado: On backorder
+[INFO ] 2021-05-08 15:12:08.877 [main] OrderHistoryPage:31 - Hizo clic para descargar el PDF
+[INFO ] 2021-05-08 17:08:52.291 [main] QuickViewPage:56 - El color aleatorio es: yellow
+[INFO ] 2021-05-08 17:08:56.804 [main] SummaryPage:24 - Esta en el carrito el articulo: Blouse
+[INFO ] 2021-05-08 17:08:56.805 [main] SummaryPage:25 - Primer articulo: Blouse
+SKU : demo_2
+Color : Black, Size : L
+[INFO ] 2021-05-08 17:08:56.873 [main] SummaryPage:32 - Esta en el carrito el articulo: Printed Summer Dress
+[INFO ] 2021-05-08 17:08:56.874 [main] SummaryPage:33 - Segundo articulo: Printed Summer Dress
+SKU : demo_5
+Color : Yellow, Size : S
+[INFO ] 2021-05-08 17:08:56.922 [main] SummaryPage:40 - Costo del despacho validado correctamente: $2.00
+[INFO ] 2021-05-08 17:08:56.973 [main] SummaryPage:46 - Total del carrito: $57.98
+[INFO ] 2021-05-08 17:09:03.089 [main] PaymentPage:36 - Costo del despacho en Payment validado correctamente: $2.00
+[INFO ] 2021-05-08 17:09:03.139 [main] PaymentPage:41 - Pago Total en Payment: $57.98
+[INFO ] 2021-05-08 17:09:08.473 [main] PaymentPage:59 - Orden fue completada satisfactoriamente
+[INFO ] 2021-05-08 17:09:11.965 [main] OrderHistoryPage:24 - Estado validado: On backorder
+[INFO ] 2021-05-08 17:09:12.147 [main] OrderHistoryPage:31 - Hizo clic para descargar el PDF
