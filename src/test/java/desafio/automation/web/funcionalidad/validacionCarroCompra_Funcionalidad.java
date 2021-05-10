@@ -1,4 +1,4 @@
-package desafio.previred.automation.web.funcionalidad;
+package desafio.automation.web.funcionalidad;
 
 import static org.junit.Assert.assertTrue;
 
@@ -7,9 +7,9 @@ import cucumber.api.java.After;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import desafio.previred.automation.web.configuracion.configSelenium;
-import desafio.previred.automation.web.util.flujosUtilesWeb;
-import desafio.previred.automation.web.util.metodosGenericos;
+import desafio.automation.web.configuracion.configSelenium;
+import desafio.automation.web.util.flujosUtilesWeb;
+import desafio.automation.web.util.metodosGenericos;
 
 public class validacionCarroCompra_Funcionalidad {
 	

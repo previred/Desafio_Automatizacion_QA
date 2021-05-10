@@ -1,4 +1,4 @@
-package desafio.previred.automation.web.modelo;
+package desafio.automation.web.modelo;
 
 import java.util.ArrayList;
 

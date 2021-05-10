@@ -3,7 +3,7 @@
     "tipoUsuario": "usuarioNuevo",
     "usuNombre": "UsuarioUno",
     "usuApellido": "PruebaUno Nuevo",
-    "usuCorreo": "pruebatest41@gmail.com",
+    "usuCorreo": "pruebatest40@gmail.com",
     "usuClave": "prueba123",
     "fechaNaDia": "29",
     "fechaNaMes": "6",

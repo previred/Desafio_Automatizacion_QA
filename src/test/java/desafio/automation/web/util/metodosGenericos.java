@@ -1,4 +1,4 @@
-package desafio.previred.automation.web.util;
+package desafio.automation.web.util;
 
 import java.io.File;
 import java.util.Calendar;
@@ -15,7 +15,7 @@ import com.cucumber.listener.Reporter;
 import com.google.common.io.Files;
 
 import cucumber.api.Scenario;
-import desafio.previred.automation.web.configuracion.configSelenium;
+import desafio.automation.web.configuracion.configSelenium;
 public class metodosGenericos {
 	
 	// ScreenShot en todos los escenarios

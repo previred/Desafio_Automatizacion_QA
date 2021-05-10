@@ -1,4 +1,4 @@
-package desafio.previred.automation.web.util;
+package desafio.automation.web.util;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -15,8 +15,8 @@ import org.openqa.selenium.support.ui.Select;
 
 import com.cucumber.listener.Reporter;
 
-import desafio.previred.automation.web.configuracion.configSelenium;
-import desafio.previred.automation.web.modelo.datosUsuario;
+import desafio.automation.web.configuracion.configSelenium;
+import desafio.automation.web.modelo.datosUsuario;
 
 public class flujosUtilesWeb {
 	

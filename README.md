@@ -1,4 +1,4 @@
-# Proyecto Previred - Carro de compras
+# Proyecto Automatizacion - Carro de compras
 
 _Programas y versiones necesarias_
 

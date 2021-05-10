@@ -1,4 +1,4 @@
-package desafio.previred.automation.web.configuracion;
+package desafio.automation.web.configuracion;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -15,7 +15,7 @@ import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
-import desafio.previred.automation.web.modelo.datosUsuario;
+import desafio.automation.web.modelo.datosUsuario;
 
 @RunWith(Suite.class)
 public class configSelenium {
