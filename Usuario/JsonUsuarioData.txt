@@ -1,0 +1,55 @@
+[
+  {
+    "tipoUsuario": "usuarioNuevo",
+    "usuNombre": "UsuarioUno",
+    "usuApellido": "PruebaUno Nuevo",
+    "usuCorreo": "pruebatest41@gmail.com",
+    "usuClave": "prueba123",
+    "fechaNaDia": "29",
+    "fechaNaMes": "6",
+    "fechaNaAnho": "1990",
+    "tipoSexo": "Masculino",
+    "opcSuscribirse":"Si",
+    "opcRecibirOfertas": "No",
+    "fonoCasa": "029876543",
+    "fonoCelular": "987654321",
+    "nomEmpresa": "Prueba Empresa QA",
+    "direccionUno": "Direccion uno prueba",
+    "direccionDos": "Direccion dos prueba",
+    "usuCiudad": "Santiago",
+    "usuEstado": "Colorado",
+    "usuCodigoPostal": "12345",
+    "usuPais": "United States",
+    "usuAlias": "Automatizador Pro"
+  },
+  {
+    "tipoUsuario": "usuarioRegistrado",
+    "usuNombre": "UsuarioDos",
+    "usuApellido": "PruebaDos Nuevo",
+    "usuCorreo": "pruebatest36@gmail.com",
+    "usuClave": "prueba123",
+    "fechaNaDia": "29",
+    "fechaNaMes": "6",
+    "fechaNaAnho": "1990",
+    "tipoSexo": "Masculino",
+    "opcSuscribirse":"Si",
+    "opcRecibirOfertas": "No",
+    "fonoCasa": "029876543",
+    "fonoCelular": "987654321",
+    "nomEmpresa": "Prueba Empresa QA",
+    "direccionUno": "Direccion uno prueba",
+    "direccionDos": "Direccion dos prueba",
+    "usuCiudad": "Santiago",
+    "usuEstado": "Colorado",
+    "usuCodigoPostal": "12345",
+    "usuPais": "United States",
+    "usuAlias": "Automatizador Pro"
+  }
+]
+
+
+        
+
+
+
+        

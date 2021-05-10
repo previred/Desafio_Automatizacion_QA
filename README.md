@@ -1,66 +1,40 @@
-# Desaf&iacute;o Automatizaci&oacute;n QA
+# Proyecto Previred - Carro de compras
 
-Realice el siguiente flujo utilizando Selenium con el lenguaje de programaci&oacute;n que prefiera.  
+_Programas y versiones necesarias_
 
- - Ingresar a sitio [automationpractice.com](http://automationpractice.com/)
+JAVA jdk1.8.0_241 / jre1.8.0_281
+MAVEN 3.5.3 	
+IDE ECLIPSE 
 
- - A&ntilde;adir al carrito de compra una blusa negra talla L 
+_Son necesarias las siguientes variables de entorno para poder ejecutar la prueba automatizada_
 
- - A&ntilde;adir al carrito un vestido de verano largo estampado, de talla S y cualquier color 
+EXECUTION   : <LOCAL>
+BROWSER     : <CHROME>
 
- - Proceder a realizar la compra 
+_Si estas variables no estan creadas en la maquina, la prueba no se va a ejecutar_
 
- - Realizar login con credenciales obtenidas de un archivo externo a su elecci&oacute;n (no importan las credenciales, basta que sea un email con estructura v&aacute;lida y contrase&ntilde;a) 
+_Dentro de la carpeta local del proyecto se encuentra la sub carpeta /Usuario que contiene el archivo *JsonUsuarioData.txt
+en el mismo se encuentran los datos del usuario que requiere la pagina para completar el proceso de compra._
 
- - Crear una cuenta 
+## Procedimiento para ejecutar la prueba
 
- - Continuar con la compra y llegar a orden completa 
-
- - Visitar historia de &oacute;rdenes y descargar PDF 
-
- - Cerrar sesi&oacute;n 
-
- 
-
-# Validaciones m&iacute;nimas 
-
- - Sacar evidencia de cada producto a&ntilde;adido en carrito 
-
- - Validar los art&iacute;culos en carrito sean “Blouse”, “Summer Dress”  
-
- - Evidencia de creaci&oacute;n de la cuenta 
-
- - Evidencia de paso de Shipping  
-
- - Validar que costo de despacho sea $2.00 
-
- - Evidencia de costo final del carrito 
-
- - Evidencia de orden completa 
-
- - Evidencia de apartado “Order History” y validar estado de la compra “On backorder” 
-
- 
-
-# Punto extra 
-
- - Seleccionar color del vestido de forma aleatoria 
-
- - Se ponderar&aacute; la cantidad de valores ingresados en duro en el c&oacute;digo 
-
- 
-# Entregables 
-
- - Archivo de entrada para la ejecuci&oacute;n de la automatizaci&oacute;n 
-
- - Archivo/s de salida (Reporte, log, evidencias tomadas) 
-
- - La soluci&oacute;n debe contener un README.md y ser enviada v&iacute;a un pull request a este repositorio. 
-
- - En el detalle del commit debes indicar los siguientes datos  
-   - Nombre Completo. 
-   - Correo Electr&oacute;nico. 
+_Dentro de features/validacionCarritoCompra.feature se encuentran los escenarios a validar
+_Ingresar en package desafio.previred.automation.web.test
+_Ejecutar la clase validacionCarroCompra_Test.java mediante Junit 4
 
 
-# NOTA: 
-El sitio de prueba suele presentar error de l&iacute;mite de accesos, basta repetir la consulta para poder llegar la opci&oacute;n requerida.
+### Reporte de la prueba 
+
+_Al finalizar la ejecución de la prueba se genera un archivo llamado *reporteCarroCompra.html con las evidencias y resultados de la prueba,
+ este reporte se encuentra en la carpeta /Reporte dentro de la carpeta local del proyecto._
+
+
+## Tecnologias Utilizadas
+
+_Todas las tecnologias utilizadas se encuentran en archivo pom.xml ._
+
+
+## Autor:
+
+***Rodolfo Cesped Medel***   
+*Ing. Informático*
