@@ -1,7 +1,7 @@
 # Desaf&iacute;o Automatizaci&oacute;n QA
 
-Realice el siguiente flujo utilizando Selenium con el lenguaje de programaci&oacute;n que prefiera.  
-
+Realice el siguiente flujo utilizando Selenium con el lenguaje de programaci&oacute;n que prefiera. 
+- Ingresar a http://opencart.abstracta.us/index.php?route=common/home
 - Añadir al carro de compras un Ipod Classic
 - Añadir al carro de compras un Imac
 - Proceder a realizar la compra
