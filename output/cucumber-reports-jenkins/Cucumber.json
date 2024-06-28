@@ -1,0 +1,169 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 16,
+        "name": "Realizar Flujo de Compras de un Monitor",
+        "description": "",
+        "id": "realizar-flujo-de-compras-de-un-monitor;realizar-flujo-de-compras-de-un-monitor;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 8129985100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Se Ingresa a Sitio de compras con usuario existente",
+            "match": {
+              "location": "FlujoCompraMonitor.IngresoSitio()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 9834675300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Se busca producto \"apple\" y lo seleccionamos",
+            "match": {
+              "arguments": [
+                {
+                  "val": "apple",
+                  "offset": 19
+                }
+              ],
+              "location": "FlujoCompraMonitor.busquedaProducto(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2225151500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "seleccionamos Check3 y Check4",
+            "match": {
+              "location": "FlujoCompraMonitor.visualizaCarrito()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 9346120000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "ingresamos \"Test_1\", \"Yellow (+2.40)\", \"Data de prueba\", ademas de \"2022-01-26\", \"17:25\", \"2021-12-24 23:55\" y \"2\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Test_1",
+                  "offset": 12
+                },
+                {
+                  "val": "Yellow (+2.40)",
+                  "offset": 22
+                },
+                {
+                  "val": "Data de prueba",
+                  "offset": 40
+                },
+                {
+                  "val": "2022-01-26",
+                  "offset": 68
+                },
+                {
+                  "val": "17:25",
+                  "offset": 82
+                },
+                {
+                  "val": "2021-12-24 23:55",
+                  "offset": 91
+                },
+                {
+                  "val": "2",
+                  "offset": 112
+                }
+              ],
+              "location": "FlujoCompraMonitor.seleccionDetalle(String,String,String,String,String,String,String)"
+            },
+            "matchedColumns": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2097863300,
+              "error_message": "org.openqa.selenium.NoAlertPresentException: no such alert\n  (Session info: chrome\u003d126.0.6478.127)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027J4GI\u0027, ip: \u0027192.168.145.1\u0027, os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_402\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\\Users\\recon\\AppData\\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60060}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 11793c6af148d981c6319f13f9e3342e\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.alert(RemoteWebDriver.java:932)\r\n\tat code.Flujo.CompraMonitor.FlujoCompraMonitor.closeAlertAndGetItsText(FlujoCompraMonitor.java:128)\r\n\tat code.Flujo.CompraMonitor.FlujoCompraMonitor.subirImagen(FlujoCompraMonitor.java:121)\r\n\tat ✽.And subimos una imagen .jpg o .png(src/test/java/testfeatures/Flujo/CP_FlujoMonitor.feature:10)\r\n",
+              "status": "failed"
+            },
+            "line": 10,
+            "name": "subimos una imagen .jpg o .png",
+            "match": {
+              "location": "FlujoCompraMonitor.subirImagen()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "Agregamos al carro de compras y continuamos con compra hasta la OC",
+            "match": {
+              "location": "FlujoCompraMonitor.crearCuenta()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "Validamos que la compra se haya realizado exitosamente",
+            "match": {
+              "location": "FlujoCompraMonitor.cerrarSesion()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@FlujoCompraMonitor"
+          },
+          {
+            "line": 1,
+            "name": "@CucumberFlujoCompraMonitor"
+          }
+        ]
+      }
+    ],
+    "name": "Realizar Flujo de Compras de un Monitor",
+    "description": "",
+    "id": "realizar-flujo-de-compras-de-un-monitor",
+    "keyword": "Feature",
+    "uri": "src/test/java/testfeatures/Flujo/CP_FlujoMonitor.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@CucumberFlujoCompraMonitor"
+      }
+    ]
+  }
+]

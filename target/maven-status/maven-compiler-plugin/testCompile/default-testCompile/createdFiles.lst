@@ -1,0 +1,15 @@
+helpers\Helper.class
+code\Flujo\UserNotRegister\FlujoUsuarioNoRegistrado.class
+testRunners\flujoTestPrevired\RunnerUserRegister.class
+pages\Objets.class
+pages\Elements.class
+pages\Wd$1.class
+testRunners\flujoTestPrevired\RunnerUserNotRegister.class
+code\Flujo\UserRegister\FlujoUsuarioRegistrado.class
+helpers\BaseExtentReports.class
+helpers\PageWeb.class
+helpers\LectorCSV.class
+util\Excel.class
+pages\Locators.class
+pages\Start.class
+pages\Wd.class
