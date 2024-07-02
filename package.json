@@ -1,0 +1,25 @@
+{
+  "name": "test_tech",
+  "version": "1.0.0",
+  "description": "Prueba tecnica Devsu E2E",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js features/*.feature",
+    "test:cucumber": "cucumber-js features/*.feature",
+    "test:report": "cucumber-js features/*.feature -f @cucumber/pretty-formatter -f json:output/TestReport_$(timestamp).json "
+  },
+  "keywords": [
+    "Selenium",
+    "E2E"
+  ],
+  "dependencies": {
+    "@cucumber/pretty-formatter": "^1.0.0",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.4.4",
+    "selenium-webdriver": "^4.22.0",
+    "xmlhttprequest": "^1.8.0"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^10.3.1"
+  }
+}
