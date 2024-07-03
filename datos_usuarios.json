@@ -1,0 +1,13 @@
+{
+    "firstname": "Jorge",
+    "lastname": "Morandin Perez",
+    "email": "morandinjorge1896@gmail.com",
+    "telephone": "123456789",
+    "password": "password123",
+    "confirm": "password123",
+    "company": "Test Company",
+    "address_1": "123 Test St",
+    "address_2": "Apt 456",
+    "city": "Santiago",
+    "postcode": "7500000"
+}
