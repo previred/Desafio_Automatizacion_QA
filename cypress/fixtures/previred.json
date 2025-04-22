@@ -1,0 +1,14 @@
+{
+  "firstname": "NombreUsuario",
+  "lastname": "ApellidoUsuario",
+  "email": "usuario_1@email.com",
+  "telephone": "123456789",
+  "company": "previRed",
+  "address1": "previRed",
+  "address2": "previRed",
+  "city": "MiCiudad",
+  "postcode": "123456",
+  "country": "Chile",
+  "zone": "Atacama",
+  "password": "prueba123456"
+}

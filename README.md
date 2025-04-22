@@ -1,53 +1,92 @@
-# Desaf&iacute;o Automatizaci&oacute;n QA
-* Realice el siguiente flujo utilizando Selenium con el lenguaje de programaci&oacute;n que prefiera.
-  
-- Ingresar a http://opencart.abstracta.us/index.php?route=common/home
-- Añadir al carro de compras un Ipod Classic
-- Añadir al carro de compras un iMac
-- Proceder a realizar la compra
-- Realizar login con credenciales obtenidas de un archivo externo a elección (basta que sea un email con estructura válida y contraseña)
-- Crear una cuenta
-- Continuar con la compra y llegar a la orden completa
-- Visitar el historial de ordenes y validar resumen de orden 
-- Cerrar sesión
+# Requisitos
+[Node js](https://nodejs.org/en/download).
 
-# Validaciones m&iacute;nimas 
+[Visual Studio Code ](https://code.visualstudio.com/download).
+# Instalación
+Debemos instalar Node.js y Visual Studio Code, ya que Cypress requiere Node.js para funcionar.
 
-- Tomar evidencia de cada producto añadido al carro
-- Validar que los articulos en el carro sean Ipod Classic y iMac
-- Evidencia de creación de la cuenta
-- Evidencia de paso a paso de checkout
-- Validar que despacho y costo sea = Flat Shipping Rate - $5.00
-- Evidencia de costo final de la orden
-- Evidencia de orden completa
-- Evidencia de apartado "Order History" y validar el estado de la compra se encuentre en estado "Pending"
-- Validar datos de dirección de pago v/s los ingresados al crear la cuenta
- 
+Para validar que Node.js se instaló correctamente, ejecutamos:
 
-# Puntaje extra 
+```bash
+node --version
+```
 
-1 Añadir al carrito dos PC HP LP3065
-  - Delivery Date = Calendario con fecha de mañana
-  - Validar que la memoria del equipo es de 16GB
-  - Escribir un review ingresando un texto de largo menor a 25 carateres y obtener mensaje de warning
-  - Escribir un review válido = Your Name,  Your review y Rating neutral (radio button central) y obtener mensaje de ingreso correcto 
+Una vez instalado Node.js, creamos el directorio del proyecto e ingresamos a él:
 
-2 Comparar los productos: Apple Cinema 30" y Samsung SyncMaster 941BW 
-  - Evidencia de cuadro comparativo de ambos productos
-    
-Se ponderará la cantidad de valores ingresados en duro y la documentación del código.
+```bash
+mkdir nombre_directorio
+cd nombre_directorio
+```
+Clonamos el proyecto desde uno de los siguientes repositorios:
 
-# Entregables
+```bash
+git clone https://github.com/Rallende1107/Previred.git
+```
+O bien:
+```bash
+git clone https://github.com/previred/Desafio_Automatizacion_QA.git
+```
 
-- Archivo de entrada de data para la ejecución de la automatización
-- Archivo/s de salida (Reporte, log, evidencias tomadas)
-- La solución debe contener un README.md con la documentación de la automatización:
-- Pre requisitos
-- Instrucciones para ejecutar
-- Detalle Flujo
-- Debe ser enviada vía un pull request a este repositorio https://github.com/previred/Desafio_Automatizacion_QA 
-- En el detalle del commit debes indicar los siguientes datos (Nombre Completo y Correo Electrónico)
+Iniciamos Visual Studio Code (si ya está instalado) con:
+```bash
+code .
+```
+# Uso
 
+Con el proyecto clonado, ingresamos a la carpeta que contiene el código:
+```bash
+cd previred
+```
 
-# NOTA: 
-El sitio de prueba suele presentar error de l&iacute;mite de accesos, basta repetir la consulta para poder llegar la opci&oacute;n requerida.
+Dentro de la carpeta, abrimos una terminal en VS Code e instalamos las dependencias (incluyendo Cypress):
+
+```bash
+npm install
+```
+
+Con las dependencias instaladas, ejecutamos Cypress con:
+
+```bash
+npx cypress open
+```
+Esto abrirá la interfaz de Cypress desde donde podemos ejecutar las pruebas.
+
+Luego:
+
+1.- Ingresamos a la sección E2E Testing (ya configurada).
+
+2.- Seleccionamos el navegador en el que queremos ejecutar las pruebas (se recomienda Chrome).
+
+3.- Hacemos clic en Start E2E Testing in Chrome.
+
+4.- Se abrirá el ejecutor de pruebas.
+
+5.- En la parte izquierda del navegador controlado por Cypress, seleccionamos la sección Specs.
+
+6.- Elegimos el archivo previred.cy.js.
+
+Esto ejecutará las pruebas automatizadas.
+
+El código de prueba se encuentra en:
+
+```bash
+cypress/e2e/1-previred/previred.cy.js
+```
+## Evidencias
+Las evidencias generadas por las pruebas (capturas de pantalla y/o videos) se encuentran en las siguientes carpetas:
+```bash
+cypress/screenshots/
+```
+## Configuración
+
+Los archivos de configuración del proyecto se encuentran en la raíz del proyecto e incluyen:
+
+`cypress.config.js` o `cypress.config.ts`: Archivo principal de configuración de Cypress.
+
+`cypress\fixtures\previred.json`: Archivo de configuración de datos para pruebas.
+
+`package.json`: Contiene la lista de dependencias y scripts del proyecto.
+
+`.gitignore`: Lista de archivos/carpetas ignoradas por Git.
+
+`node_modules/`: Carpeta generada automáticamente al instalar dependencias (no se debe modificar manualmente
