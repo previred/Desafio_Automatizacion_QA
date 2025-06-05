@@ -1,0 +1,39 @@
+PS C:\testPrevired> npm test
+
+> testprevired@1.0.0 test
+> cucumber-js
+
+DevTools listening on ws://127.0.0.1:55935/devtools/browser/6fcc91d5-d21a-4db6-934c-57e28579c22d
+DevTools listening on ws://127.0.0.1:55935/devtools/browser/6fcc91d5-d21a-4db6-934c-57e28579c22d
+..✅ Página del producto validada: iPod Classic
+..✅ Página del producto validada: iPod Classic
+.✅ Página del producto validada: iMac
+.✅ Todos los productos esperados están presentes en el carrito.
+🔎 Productos comprobados en el carrito: iPod Classic, iMac
+.✅ Validación correcta: Checkout
+.WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1749141044.003346   13688 voice_transcription.cc:58] Registering VoiceTranscriptionCapability
+🖱️ Botón 'Continue' clickeado
+✅ Formulario de registro enviado con éxito
+.✅ Método de envío validado: Flat Shipping Rate - $5.00
+Términos aceptados
+🎉 Pedido realizado con éxito: Your order has been placed!
+.Estado de la orden validado: Pending
+✅ Dirección de pago validada correctamente
+..
+DevTools listening on ws://127.0.0.1:56054/devtools/browser/e7b6e291-8cf4-4b67-8f68-7336b7ca0478
+..✅ Página del producto validada: HP LP3065
+.WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1749141093.747827   54600 voice_transcription.cc:58] Registering VoiceTranscriptionCapability
+.💾 Memoria validada: es de 16GB
+.🟨 Activando tab de review...
+⚠️ Review demasiado corta, debe ser mayor a 25 caracteres
+✅ Review ingresada correctamente
+..
+DevTools listening on ws://127.0.0.1:56090/devtools/browser/4908d17c-5f84-4372-ba4e-48fed6eb3a21
+....🔍 Página de comparación cargada correctamente
+..
+
+3 scenarios (3 passed)
+17 steps (17 passed)
+1m14.044s (executing steps: 1m14.024s)

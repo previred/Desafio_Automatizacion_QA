@@ -1,0 +1,19 @@
+{
+  "name": "testprevired",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@cucumber/cucumber": "^11.3.0",
+    "selenium-webdriver": "^4.33.0"
+  },
+  "devDependencies": {
+    "chromedriver": "^137.0.1"
+  }
+}
