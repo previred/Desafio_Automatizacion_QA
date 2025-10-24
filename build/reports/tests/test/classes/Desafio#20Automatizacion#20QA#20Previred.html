@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class Desafio Automatizacion QA Previred</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class Desafio Automatizacion QA Previred</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/default-package.html">default-package</a> &gt; Desafio Automatizacion QA Previred</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">3</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">1</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">12.262s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">66%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="tab-container">
+<ul class="tabLinks">
+<li>
+<a href="#">Failed tests</a>
+</li>
+<li>
+<a href="#">Tests</a>
+</li>
+<li>
+<a href="#">Standard output</a>
+</li>
+<li>
+<a href="#">Standard error</a>
+</li>
+</ul>
+<div class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="Comparar 2 productos"></a>
+<h3 class="failures">Comparar 2 productos</h3>
+<span class="code">
+<pre>java.lang.AssertionError: Se valida estar en la pagina de la comparacion de productos expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at steps.MainPageSteps.revisoElCuadroComparativoDeAmbosProductos(MainPageSteps.java:72)
+	at ✽.reviso el cuadro comparativo de ambos productos(file:///Users/mobdev/Desktop/Desafio_Automatizacion_QA/src/test/resources/features/EjercicioPrevired.feature:24)
+</pre>
+</span>
+</div>
+</div>
+<div class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="failures">Comparar 2 productos</td>
+<td class="failures">2.808s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="success">Escribir un buen review</td>
+<td class="success">1.654s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Escribir un mal review y obtener mensaje de warning</td>
+<td class="success">7.800s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>
+@casoExtra
+?[1mScenario:?[22m Escribir un mal review y obtener mensaje de warning ?[90m# file:///Users/mobdev/Desktop/Desafio_Automatizacion_QA/src/test/resources/features/EjercicioPrevired.feature:4?[39m
+  ?[32m✔?[39m ?[32m?[1mGiven ?[22mIngreso a la pagina web de opencart?[39m                 ?[90m# steps.MainPageSteps.IngresoALaPaginaWebDeOpenCart()?[39m
+  ?[32m✔?[39m ?[32m?[1mAnd ?[22mselecciono el primer articulo?[39m                         ?[90m# steps.MainPageSteps.seleccionoElPrimerArticulo()?[39m
+  ?[32m✔?[39m ?[32m?[1mWhen ?[22mle escribo un review no valido?[39m                       ?[90m# steps.ProductSteps.leEscriboUnReviewNoValido()?[39m
+  ?[32m✔?[39m ?[32m?[1mThen ?[22mvalido mensaje de warning?[39m                            ?[90m# steps.ProductSteps.validoMensajeDeWarning()?[39m
+
+@casoExtra
+?[1mScenario:?[22m Escribir un buen review              ?[90m# file:///Users/mobdev/Desktop/Desafio_Automatizacion_QA/src/test/resources/features/EjercicioPrevired.feature:11?[39m
+  ?[32m✔?[39m ?[32m?[1mGiven ?[22mIngreso a la pagina web de opencart?[39m  ?[90m# steps.MainPageSteps.IngresoALaPaginaWebDeOpenCart()?[39m
+  ?[32m✔?[39m ?[32m?[1mAnd ?[22mselecciono el primer articulo?[39m          ?[90m# steps.MainPageSteps.seleccionoElPrimerArticulo()?[39m
+  ?[32m✔?[39m ?[32m?[1mWhen ?[22mle escribo un review valido?[39m           ?[90m# steps.ProductSteps.leEscriboUnReviewValido()?[39m
+  ?[32m✔?[39m ?[32m?[1mThen ?[22mvalido el mensaje de ingreso correcto?[39m ?[90m# steps.ProductSteps.validoMensajeExitoso()?[39m
+
+@casoExtra
+?[1mScenario:?[22m Comparar 2 productos                           ?[90m# file:///Users/mobdev/Desktop/Desafio_Automatizacion_QA/src/test/resources/features/EjercicioPrevired.feature:18?[39m
+  ?[32m✔?[39m ?[32m?[1mGiven ?[22mIngreso a la pagina web de opencart?[39m            ?[90m# steps.MainPageSteps.IngresoALaPaginaWebDeOpenCart()?[39m
+  ?[32m✔?[39m ?[32m?[1mAnd ?[22mbusco el producto ?[1m&quot;Apple Cinema 30&quot;?[22m?[39m              ?[90m# steps.MainPageSteps.buscoElProducto(java.lang.String)?[39m
+  ?[32m✔?[39m ?[32m?[1mAnd ?[22mlo agrego a la comparacion?[39m                       ?[90m# steps.MainPageSteps.loAgregoALaComparacion()?[39m
+  ?[32m✔?[39m ?[32m?[1mWhen ?[22mbusco el producto ?[1m&quot;Samsung SyncMaster 941BW&quot;?[22m?[39m    ?[90m# steps.MainPageSteps.buscoElProducto(java.lang.String)?[39m
+  ?[32m✔?[39m ?[32m?[1mAnd ?[22mlo agrego a la comparacion?[39m                       ?[90m# steps.MainPageSteps.loAgregoALaComparacion()?[39m
+  ?[31m✘?[39m ?[31m?[1mThen ?[22mreviso el cuadro comparativo de ambos productos?[39m ?[90m# steps.MainPageSteps.revisoElCuadroComparativoDeAmbosProductos()?[39m
+        ?[31mjava.lang.AssertionError: Se valida estar en la pagina de la comparacion de productos expected [true] but found [false]?[39m
+        ?[31m	at org.testng.Assert.fail(Assert.java:111)?[39m
+        ?[31m	at org.testng.Assert.failNotEquals(Assert.java:1590)?[39m
+        ?[31m	at org.testng.Assert.assertTrue(Assert.java:57)?[39m
+        ?[31m	at steps.MainPageSteps.revisoElCuadroComparativoDeAmbosProductos(MainPageSteps.java:72)?[39m
+        ?[31m	at ✽.reviso el cuadro comparativo de ambos productos(file:///Users/mobdev/Desktop/Desafio_Automatizacion_QA/src/test/resources/features/EjercicioPrevired.feature:24)?[39m
+
+        ?[34mScenario bien ejecutado, evidencia agregada?[39m
+
+
+        ?[34mEmbedding Screenshot of the evidence [image/png 217800 bytes]?[39m
+
+
+        ?[34mScenario fallo, favor revisar imagen de error?[39m
+
+
+        ?[34mEmbedding Screenshot of the error [image/png 217800 bytes]?[39m
+
+</pre>
+</span>
+</div>
+<div class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="https://www.gradle.org">Gradle 9.0.0</a> at Oct 24, 2025, 2:31:21 PM</p>
+</div>
+</div>
+</body>
+</html>
