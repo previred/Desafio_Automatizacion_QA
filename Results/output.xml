@@ -1,0 +1,1548 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.12.4 on win32)" generated="2025-09-06T23:21:12.415448" rpa="false" schemaversion="5">
+<suite id="s1" name="Test" source="C:\Workspace\Desafio_Automatizacion_QA\Test">
+<suite id="s1-s1" name="puntosExtrasTest" source="C:\Workspace\Desafio_Automatizacion_QA\Test\puntosExtrasTest.robot">
+<test id="s1-s1-t1" name="Look for HP and write a review" line="9">
+<kw name="Store page is loaded" owner="common">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-09-06T23:21:16.055715" level="INFO">Opening browser 'Chrome' to base url 'https://opencart.abstracta.us/index.php?route=common/home'.</msg>
+<arg>${url}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-09-06T23:21:16.053709" elapsed="7.024618"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-09-06T23:21:23.078327" elapsed="0.093646"/>
+</kw>
+<kw name="Get Title" owner="SeleniumLibrary">
+<msg time="2025-09-06T23:21:23.187607" level="INFO">${title} = Your Store</msg>
+<var>${title}</var>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2025-09-06T23:21:23.171973" elapsed="0.015634"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${title}</arg>
+<arg>${pageTitle_txt}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-09-06T23:21:23.187607" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T23:21:25.188252" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T23:21:23.187607" elapsed="2.001513"/>
+</kw>
+<status status="PASS" start="2025-09-06T23:21:16.039476" elapsed="9.150836"/>
+</kw>
+<kw name="Pick item HP LP3065 and added 2 times" owner="shoppingCart_kw" source_name="Pick item ${name_product} and added ${itemAmount} times">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-06T23:21:25.197708" level="INFO">Typing text 'HP LP3065' into text field 'name=search'.</msg>
+<arg>${search_input}</arg>
+<arg>${name_product}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-06T23:21:25.195708" elapsed="0.455233"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-09-06T23:21:25.668826" level="INFO">Clicking button 'xpath=//button[@class="btn btn-default btn-lg"]'.</msg>
+<arg>${search_btn}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-06T23:21:25.666830" elapsed="0.865539"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T23:21:28.533022" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T23:21:26.532369" elapsed="2.000653"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${addToCart_btn}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-09-06T23:21:28.533022" elapsed="0.341536"/>
+</kw>
+<kw name="Click Image" owner="SeleniumLibrary">
+<msg time="2025-09-06T23:21:28.874558" level="INFO">Clicking image 'xpath=//*[@id="content"]/div[3]/div/div/div[1]/a/img'.</msg>
+<arg>${hpLaptop_img}</arg>
+<doc>Clicks an image identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-06T23:21:28.874558" elapsed="1.874857"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T23:21:32.749678" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T23:21:30.749415" elapsed="2.000263"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-09-06T23:21:33.204892" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="screenshot-HP%20LP3065-1.png"&gt;&lt;img src="screenshot-HP%20LP3065-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>screenshot-${name_product}-{index}.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-09-06T23:21:32.749678" elapsed="0.455214"/>
+</kw>
+<kw name="Check specification" owner="shoppingCart_kw">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-09-06T23:21:33.207887" level="INFO">Clicking element 'xpath=//*[@id="content"]/div/div[1]/ul[2]/li[2]/a'.</msg>
+<arg>${specification_lnk}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-06T23:21:33.206888" elapsed="0.276453"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-06T23:21:33.607118" level="INFO">${specificationText} = test 1 16GB</msg>
+<var>${specificationText}</var>
+<arg>${specification_tbl}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-06T23:21:33.484337" elapsed="0.123780"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${specificationText}</arg>
+<arg>item=${16GB_txt}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-09-06T23:21:33.608117" elapsed="0.000998"/>
+</kw>
+<doc>Obtendremos el texto de la especificacion para su checkeo</doc>
+<status status="PASS" start="2025-09-06T23:21:33.205890" elapsed="0.404220"/>
+</kw>
+<kw name="Pick Delivery Date" owner="shoppingCart_kw">
+<kw name="Get Current Date" owner="DateTime">
+<msg time="2025-09-06T23:21:33.613119" level="INFO">${varDate} = 2025-09-06</msg>
+<var>${varDate}</var>
+<arg>result_format=%Y-%m-%d</arg>
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<status status="PASS" start="2025-09-06T23:21:33.613119" elapsed="0.000998"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-09-06T23:21:33.615117" level="INFO">2025-09-06</msg>
+<arg>${varDate}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-09-06T23:21:33.614117" elapsed="0.001000"/>
+</kw>
+<kw name="Add Time To Date" owner="DateTime">
+<msg time="2025-09-06T23:21:33.632036" level="INFO">${dateToDeliver} = 2025-09-07 00:00:00.000</msg>
+<var>${dateToDeliver}</var>
+<arg>${varDate}</arg>
+<arg>1 day</arg>
+<doc>Adds time to date and returns the resulting date.</doc>
+<status status="PASS" start="2025-09-06T23:21:33.616107" elapsed="0.015929"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-06T23:21:33.634035" level="INFO">Typing text '2025-09-07 00:00:00.000' into text field 'id=input-option225'.</msg>
+<arg>${date_input}</arg>
+<arg>${dateToDeliver}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-06T23:21:33.633036" elapsed="0.452346"/>
+</kw>
+<doc>Generamos la fecha del dia de hoy en el formato de la pagina, para luego sumar un dia que sera ingresado al sitio</doc>
+<status status="PASS" start="2025-09-06T23:21:33.611106" elapsed="0.474276"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-06T23:21:34.085382" level="INFO">Typing text '2' into text field 'id=input-quantity'.</msg>
+<arg>${quantity_input}</arg>
+<arg>${itemAmount}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-06T23:21:34.085382" elapsed="0.398806"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-09-06T23:21:34.484188" level="INFO">Clicking button 'id=button-cart'.</msg>
+<arg>${addToCartTwo_btn}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-06T23:21:34.484188" elapsed="0.340635"/>
+</kw>
+<doc>Esta funcion buscara un item y lo agregara X veces al carro</doc>
+<status status="PASS" start="2025-09-06T23:21:25.192656" elapsed="9.632167"/>
+</kw>
+<kw name="Write a review" owner="shoppingCart_kw">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-09-06T23:21:34.834291" level="INFO">Clicking element 'xpath=//*[@id="content"]/div/div[2]/div[3]/p/a[2]'.</msg>
+<arg>${review_lnk}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-06T23:21:34.834291" elapsed="0.287208"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-06T23:21:35.123511" level="INFO">Typing text 'Daniel Sanchez Says' into text field 'id=input-name'.</msg>
+<arg>${reviewName_input}</arg>
+<arg>${reviewName_txt}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-06T23:21:35.122508" elapsed="0.392304"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-06T23:21:35.514812" level="INFO">Typing text 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' into text field 'id=input-review'.</msg>
+<arg>${reviewDescription}</arg>
+<arg>${loremIpsum_txt}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-06T23:21:35.514812" elapsed="0.519231"/>
+</kw>
+<kw name="Select Radio Button" owner="SeleniumLibrary">
+<msg time="2025-09-06T23:21:36.036043" level="INFO">Selecting '3' from radio button 'rating'.</msg>
+<arg>group_name=${ratingGropu_rbtn}</arg>
+<arg>value=3</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<status status="PASS" start="2025-09-06T23:21:36.035044" elapsed="0.299736"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-09-06T23:21:36.765774" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-review-1.png"&gt;&lt;img src="selenium-review-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>selenium-review-{index}.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-09-06T23:21:36.334780" elapsed="0.430994"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-09-06T23:21:36.767967" level="INFO">Clicking button 'xpath=//*[@id="button-review"]'.</msg>
+<arg>${reviewContinue_btn}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-06T23:21:36.766826" elapsed="0.328569"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T23:21:39.096155" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T23:21:37.095395" elapsed="2.000760"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${alert_review_success}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-06T23:21:39.096155" elapsed="0.096998"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-06T23:21:39.249107" level="INFO">${warningText} = Thank you for your review. It has been submitted to the webmaster for approval.</msg>
+<var>${warningText}</var>
+<arg>${alert_review_success}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-06T23:21:39.194152" elapsed="0.054955"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${warningText}</arg>
+<arg>${reviewSuccess_txt}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-09-06T23:21:39.249107" elapsed="0.000000"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-09-06T23:21:39.634486" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-review-2.png"&gt;&lt;img src="selenium-review-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>selenium-review-{index}.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-09-06T23:21:39.249107" elapsed="0.385379"/>
+</kw>
+<doc>En esta seccion realizaremos la escritura de un review, asignaremos un rating para posteriormente ser enviado a revision.</doc>
+<status status="PASS" start="2025-09-06T23:21:34.824823" elapsed="4.810665"/>
+</kw>
+<status status="PASS" start="2025-09-06T23:21:16.039476" elapsed="23.597018"/>
+</test>
+<status status="PASS" start="2025-09-06T23:21:12.593611" elapsed="27.046831"/>
+</suite>
+<suite id="s1-s2" name="puntosExtrasTest II" source="C:\Workspace\Desafio_Automatizacion_QA\Test\puntosExtrasTest_II.robot">
+<test id="s1-s2-t1" name="Comparation test" line="9">
+<kw name="Store page is loaded" owner="common">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-09-06T23:21:39.703658" level="INFO">Opening browser 'Chrome' to base url 'https://opencart.abstracta.us/index.php?route=common/home'.</msg>
+<arg>${url}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-09-06T23:21:39.703658" elapsed="5.616540"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-09-06T23:21:45.321191" elapsed="0.075243"/>
+</kw>
+<kw name="Get Title" owner="SeleniumLibrary">
+<msg time="2025-09-06T23:21:45.412059" level="INFO">${title} = Your Store</msg>
+<var>${title}</var>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2025-09-06T23:21:45.396434" elapsed="0.015625"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${title}</arg>
+<arg>${pageTitle_txt}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-09-06T23:21:45.412059" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T23:21:47.428593" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T23:21:45.427701" elapsed="2.000892"/>
+</kw>
+<status status="PASS" start="2025-09-06T23:21:39.703658" elapsed="7.725934"/>
+</kw>
+<kw name="Search product: Apple Cinema 30 for comparision" owner="shoppingCart_kw" source_name="Search product: ${name_product} for comparision">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-06T23:21:47.445594" level="INFO">Typing text 'Apple Cinema 30' into text field 'name=search'.</msg>
+<arg>${search_input}</arg>
+<arg>${name_product}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-06T23:21:47.443591" elapsed="0.503421"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-09-06T23:21:47.947012" level="INFO">Clicking button 'xpath=//button[@class="btn btn-default btn-lg"]'.</msg>
+<arg>${search_btn}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-06T23:21:47.947012" elapsed="0.851951"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-09-06T23:21:48.798963" level="INFO">Clicking button 'xpath=//button[@type="button" and contains(@onclick, "compare.add")]'.</msg>
+<arg>${addToComparation_btn}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-06T23:21:48.798963" elapsed="0.356272"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-09-06T23:21:49.804447" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="screenshot-Apple%20Cinema%2030-1.png"&gt;&lt;img src="screenshot-Apple%20Cinema%2030-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>screenshot-${name_product}-{index}.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-09-06T23:21:49.155235" elapsed="0.649212"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T23:21:51.807600" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T23:21:49.805453" elapsed="2.002147"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${alert_text_comparation}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-06T23:21:51.807600" elapsed="0.082284"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-06T23:21:51.967842" level="INFO">${alert_text} = Success: You have added Apple Cinema 30" to your product comparison!
+×</msg>
+<var>${alert_text}</var>
+<arg>${alert_text_comparation}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-06T23:21:51.889884" elapsed="0.077958"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-09-06T23:21:51.967842" level="INFO">Success: You have added Apple Cinema 30" to your product comparison!
+×</msg>
+<arg>${alert_text}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-09-06T23:21:51.967842" elapsed="0.000000"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${alert_text}</arg>
+<arg>Success: You have added ${name_product}</arg>
+<arg>ignore_case=True</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-09-06T23:21:51.967842" elapsed="0.000000"/>
+</kw>
+<doc>Siguiendo la keyword anterior como base agregara items para ser comparados</doc>
+<status status="PASS" start="2025-09-06T23:21:47.440597" elapsed="4.527245"/>
+</kw>
+<kw name="Search product: Samsung SyncMaster 941BW for comparision" owner="shoppingCart_kw" source_name="Search product: ${name_product} for comparision">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-06T23:21:51.967842" level="INFO">Typing text 'Samsung SyncMaster 941BW' into text field 'name=search'.</msg>
+<arg>${search_input}</arg>
+<arg>${name_product}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-06T23:21:51.967842" elapsed="0.430452"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-09-06T23:21:52.398294" level="INFO">Clicking button 'xpath=//button[@class="btn btn-default btn-lg"]'.</msg>
+<arg>${search_btn}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-06T23:21:52.398294" elapsed="0.897257"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-09-06T23:21:53.301532" level="INFO">Clicking button 'xpath=//button[@type="button" and contains(@onclick, "compare.add")]'.</msg>
+<arg>${addToComparation_btn}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-06T23:21:53.298550" elapsed="0.302097"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-09-06T23:21:54.062203" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="screenshot-Samsung%20SyncMaster%20941BW-1.png"&gt;&lt;img src="screenshot-Samsung%20SyncMaster%20941BW-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>screenshot-${name_product}-{index}.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-09-06T23:21:53.600647" elapsed="0.462556"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T23:21:56.065776" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T23:21:54.064201" elapsed="2.001575"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${alert_text_comparation}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-06T23:21:56.066776" elapsed="0.058671"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-06T23:21:56.186833" level="INFO">${alert_text} = Success: You have added Samsung SyncMaster 941BW to your product comparison!
+×</msg>
+<var>${alert_text}</var>
+<arg>${alert_text_comparation}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-06T23:21:56.125447" elapsed="0.061386"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-09-06T23:21:56.186833" level="INFO">Success: You have added Samsung SyncMaster 941BW to your product comparison!
+×</msg>
+<arg>${alert_text}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-09-06T23:21:56.186833" elapsed="0.000000"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${alert_text}</arg>
+<arg>Success: You have added ${name_product}</arg>
+<arg>ignore_case=True</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-09-06T23:21:56.186833" elapsed="0.000000"/>
+</kw>
+<doc>Siguiendo la keyword anterior como base agregara items para ser comparados</doc>
+<status status="PASS" start="2025-09-06T23:21:51.967842" elapsed="4.218991"/>
+</kw>
+<kw name="Go to product comparition page" owner="shoppingCart_kw">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-09-06T23:21:56.186833" level="INFO">Clicking element 'xpath=//*[@id="product-search"]/div[1]/a[2]'.</msg>
+<arg>${comparision_lnk}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-06T23:21:56.186833" elapsed="0.865393"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${table_anchor_for_ScreenShoot}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-09-06T23:21:57.052226" elapsed="0.353439"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-09-06T23:21:57.809220" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-comparition-table-1.png"&gt;&lt;img src="selenium-comparition-table-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>selenium-comparition-table-{index}.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-09-06T23:21:57.405665" elapsed="0.404496"/>
+</kw>
+<status status="PASS" start="2025-09-06T23:21:56.186833" elapsed="1.623328"/>
+</kw>
+<status status="PASS" start="2025-09-06T23:21:39.703658" elapsed="18.107561"/>
+</test>
+<status status="PASS" start="2025-09-06T23:21:39.645443" elapsed="18.169969"/>
+</suite>
+<suite id="s1-s3" name="shoppingCreatingNewAccount" source="C:\Workspace\Desafio_Automatizacion_QA\Test\shoppingCreatingNewAccount.robot">
+<test id="s1-s3-t1" name="Shopping and create new account" line="17">
+<kw name="Store page is loaded" owner="common">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-09-06T23:21:57.882377" level="INFO">Opening browser 'Chrome' to base url 'https://opencart.abstracta.us/index.php?route=common/home'.</msg>
+<arg>${url}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-09-06T23:21:57.882377" elapsed="5.987101"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-09-06T23:22:03.869478" elapsed="0.090361"/>
+</kw>
+<kw name="Get Title" owner="SeleniumLibrary">
+<msg time="2025-09-06T23:22:03.979877" level="INFO">${title} = Your Store</msg>
+<var>${title}</var>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2025-09-06T23:22:03.959839" elapsed="0.020038"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${title}</arg>
+<arg>${pageTitle_txt}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-09-06T23:22:03.979877" elapsed="0.009862"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T23:22:05.990033" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T23:22:03.989739" elapsed="2.000294"/>
+</kw>
+<status status="PASS" start="2025-09-06T23:21:57.882377" elapsed="8.107656"/>
+</kw>
+<kw name="Search product: Ipod Classic for add to cart" owner="shoppingCart_kw" source_name="Search product: ${name_product} for add to cart">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-06T23:22:05.990033" level="INFO">Typing text 'Ipod Classic' into text field 'name=search'.</msg>
+<arg>${search_input}</arg>
+<arg>${name_product}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-06T23:22:05.990033" elapsed="0.542780"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-09-06T23:22:06.534915" level="INFO">Clicking button 'xpath=//button[@class="btn btn-default btn-lg"]'.</msg>
+<arg>${search_btn}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-06T23:22:06.534836" elapsed="1.149828"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-09-06T23:22:07.686661" level="INFO">Clicking button 'xpath=//button[@type="button" and contains(@onclick, "cart.add")]'.</msg>
+<arg>${addToCart_btn}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-06T23:22:07.685660" elapsed="0.348970"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-09-06T23:22:09.072647" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="screenshot-Ipod%20Classic-1.png"&gt;&lt;img src="screenshot-Ipod%20Classic-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>screenshot-${name_product}-{index}.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-09-06T23:22:08.034630" elapsed="1.038017"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T23:22:11.075236" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T23:22:09.073665" elapsed="2.001571"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-06T23:22:11.169829" level="INFO">${alert_text} = Success: You have added iPod Classic to your shopping cart!
+×</msg>
+<var>${alert_text}</var>
+<arg>${alert_text_locator}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-06T23:22:11.075236" elapsed="0.094593"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-09-06T23:22:11.169829" level="INFO">Success: You have added iPod Classic to your shopping cart!
+×</msg>
+<arg>${alert_text}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-09-06T23:22:11.169829" elapsed="0.000000"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${alert_text}</arg>
+<arg>${name_product}</arg>
+<arg>ignore_case=True</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-09-06T23:22:11.174855" elapsed="0.000000"/>
+</kw>
+<doc>Esta keyword esta creada con el fin de buscar el producto indicado, agregarlo al carro y revisar que sea el correcto</doc>
+<status status="PASS" start="2025-09-06T23:22:05.990033" elapsed="5.184822"/>
+</kw>
+<kw name="Search product: iMac for add to cart" owner="shoppingCart_kw" source_name="Search product: ${name_product} for add to cart">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-06T23:22:11.179484" level="INFO">Typing text 'iMac' into text field 'name=search'.</msg>
+<arg>${search_input}</arg>
+<arg>${name_product}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-06T23:22:11.179484" elapsed="0.335045"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-09-06T23:22:11.514529" level="INFO">Clicking button 'xpath=//button[@class="btn btn-default btn-lg"]'.</msg>
+<arg>${search_btn}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-06T23:22:11.514529" elapsed="0.834798"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-09-06T23:22:12.354353" level="INFO">Clicking button 'xpath=//button[@type="button" and contains(@onclick, "cart.add")]'.</msg>
+<arg>${addToCart_btn}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-06T23:22:12.354353" elapsed="0.265104"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-09-06T23:22:13.470177" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="screenshot-iMac-1.png"&gt;&lt;img src="screenshot-iMac-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>screenshot-${name_product}-{index}.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-09-06T23:22:12.619457" elapsed="0.851726"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T23:22:15.472497" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T23:22:13.471183" elapsed="2.001314"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-06T23:22:15.545200" level="INFO">${alert_text} = Success: You have added iMac to your shopping cart!
+×</msg>
+<var>${alert_text}</var>
+<arg>${alert_text_locator}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-06T23:22:15.472497" elapsed="0.072703"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-09-06T23:22:15.547197" level="INFO">Success: You have added iMac to your shopping cart!
+×</msg>
+<arg>${alert_text}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-09-06T23:22:15.546199" elapsed="0.000998"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${alert_text}</arg>
+<arg>${name_product}</arg>
+<arg>ignore_case=True</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-09-06T23:22:15.548196" elapsed="0.001002"/>
+</kw>
+<doc>Esta keyword esta creada con el fin de buscar el producto indicado, agregarlo al carro y revisar que sea el correcto</doc>
+<status status="PASS" start="2025-09-06T23:22:11.174855" elapsed="4.374343"/>
+</kw>
+<kw name="Deploy cartMenu and validate items" owner="shoppingCart_kw">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-09-06T23:22:15.553205" level="INFO">Clicking button 'xpath=//div[@id="cart"]/button'.</msg>
+<arg>${displayCart_btn}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-06T23:22:15.552205" elapsed="0.340255"/>
+</kw>
+<kw name="Validate Cart Contains Items" owner="shoppingCart_kw">
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-06T23:22:15.998831" level="INFO">${cart_text} = iMac x 1 $122.00
+iPod Classic x 1 $122.00
+Sub-Total $200.00
+Eco Tax (-2.00) $4.00
+VAT (20%) $40.00
+Total $244.00
+View Cart    Checkout</msg>
+<var>${cart_text}</var>
+<arg>${cart_information}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-06T23:22:15.894222" elapsed="0.104609"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${cart_text}</arg>
+<arg>${product}</arg>
+<arg>ignore_case=True</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-09-06T23:22:15.998831" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-09-06T23:22:15.998831" level="INFO">iMac x 1 $122.00
+iPod Classic x 1 $122.00
+Sub-Total $200.00
+Eco Tax (-2.00) $4.00
+VAT (20%) $40.00
+Total $244.00
+View Cart    Checkout</msg>
+<arg>${cart_text}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-09-06T23:22:15.998831" elapsed="0.000000"/>
+</kw>
+<var name="${product}">Ipod Classic</var>
+<status status="PASS" start="2025-09-06T23:22:15.998831" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${cart_text}</arg>
+<arg>${product}</arg>
+<arg>ignore_case=True</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-09-06T23:22:15.998831" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-09-06T23:22:15.998831" level="INFO">iMac x 1 $122.00
+iPod Classic x 1 $122.00
+Sub-Total $200.00
+Eco Tax (-2.00) $4.00
+VAT (20%) $40.00
+Total $244.00
+View Cart    Checkout</msg>
+<arg>${cart_text}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-09-06T23:22:15.998831" elapsed="0.000000"/>
+</kw>
+<var name="${product}">iMac</var>
+<status status="PASS" start="2025-09-06T23:22:15.998831" elapsed="0.000000"/>
+</iter>
+<var>${product}</var>
+<value>@{expected_products}</value>
+<status status="PASS" start="2025-09-06T23:22:15.998831" elapsed="0.000000"/>
+</for>
+<arg>Ipod Classic</arg>
+<arg>iMac</arg>
+<doc>Revisaremos que el carro cuente con los items indicados como entrada</doc>
+<status status="PASS" start="2025-09-06T23:22:15.893459" elapsed="0.105372"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-09-06T23:22:16.395556" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="screenshot-itemsOnCart-1.png"&gt;&lt;img src="screenshot-itemsOnCart-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>screenshot-itemsOnCart-{index}.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-09-06T23:22:15.998831" elapsed="0.397652"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T23:22:18.398437" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T23:22:16.396616" elapsed="2.001821"/>
+</kw>
+<doc>Despliega preview del carro</doc>
+<status status="PASS" start="2025-09-06T23:22:15.551203" elapsed="2.847234"/>
+</kw>
+<kw name=" Go to checkout page" owner="shoppingCart_kw">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T23:22:20.398709" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T23:22:18.398437" elapsed="2.000272"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-09-06T23:22:20.400660" level="INFO">Clicking element 'xpath=//a[contains(@href, 'checkout/checkout')]'.</msg>
+<arg>${checkout_menu_btn}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-06T23:22:20.399662" elapsed="1.307486"/>
+</kw>
+<kw name="Get Title" owner="SeleniumLibrary">
+<msg time="2025-09-06T23:22:21.718330" level="INFO">${checkoutTitle_txt} = Checkout</msg>
+<var>${checkoutTitle_txt}</var>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2025-09-06T23:22:21.708145" elapsed="0.010185"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${checkoutTitle_txt}</arg>
+<arg>${checkout_txt}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-09-06T23:22:21.718330" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2025-09-06T23:22:18.398437" elapsed="3.319893"/>
+</kw>
+<kw name="Continue creating new account" owner="checkoutPage_kw">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T23:22:23.718919" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T23:22:21.718330" elapsed="2.000589"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-09-06T23:22:23.718919" level="INFO">Clicking button 'xpath=//input[@type='radio' and @name='account' and @value='register']'.</msg>
+<arg>${registerAccount_radioBtn}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-06T23:22:23.718919" elapsed="0.292796"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-09-06T23:22:24.013763" level="INFO">Clicking button 'xpath=//*[@id="button-account"]'.</msg>
+<arg>${continueToBIlling_btn}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-06T23:22:24.012709" elapsed="0.298403"/>
+</kw>
+<doc>Seleccion para comenzar flujo de crear una cuenta</doc>
+<status status="PASS" start="2025-09-06T23:22:21.718330" elapsed="2.592782"/>
+</kw>
+<kw name="Fillup personal data" owner="checkoutPage_kw">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T23:22:26.313556" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T23:22:24.313221" elapsed="2.000335"/>
+</kw>
+<kw name="Look for user on data file" owner="checkoutPage_kw">
+<kw name="Open Workbook" owner="RPA.Excel.Files">
+<msg time="2025-09-06T23:22:26.344898" level="INFO">Opened workbook: &lt;RPA.Excel.Files.XlsxWorkbook object at 0x000002D5DE0B6B40&gt;</msg>
+<arg>Data/usuarios.xlsx</arg>
+<doc>Open an existing Excel workbook.</doc>
+<status status="PASS" start="2025-09-06T23:22:26.313556" elapsed="0.031342"/>
+</kw>
+<kw name="Read Worksheet As Table" owner="RPA.Excel.Files">
+<msg time="2025-09-06T23:22:26.344898" level="INFO">Created table: Table(columns=['id', 'nombre', 'apellido', 'correo', 'pass', 'telefono', 'direccion1', 'ciudad', 'postcode', 'pais', 'region'], rows=10)</msg>
+<msg time="2025-09-06T23:22:26.344898" level="INFO">${data} = Table(columns=['id', 'nombre', 'apellido', 'correo', 'pass', 'telefono', 'direccion1', 'ciudad', 'postcode', 'pais', 'region'], rows=10)</msg>
+<var>${data}</var>
+<arg>header=True</arg>
+<doc>Read the contents of a worksheet into a Table container. Allows
+sorting/filtering/manipulating using the ``RPA.Tables`` library.</doc>
+<status status="PASS" start="2025-09-06T23:22:26.344898" elapsed="0.000000"/>
+</kw>
+<kw name="Close Workbook" owner="RPA.Excel.Files">
+<msg time="2025-09-06T23:22:26.344898" level="INFO">Closing workbook: &lt;RPA.Excel.Files.XlsxWorkbook object at 0x000002D5DE0B6B40&gt;</msg>
+<doc>Close the active workbook.</doc>
+<status status="PASS" start="2025-09-06T23:22:26.344898" elapsed="0.000000"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-09-06T23:22:26.344898" level="INFO">${id} = 1</msg>
+<var>${id}</var>
+<arg>${row}[id]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-09-06T23:22:26.344898" elapsed="0.000000"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>'${id}' == '${excelID}'</arg>
+<arg>Set Test Variable</arg>
+<arg>${user}</arg>
+<arg>${row}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2025-09-06T23:22:26.344898" elapsed="0.000000"/>
+</kw>
+<var name="${row}">{'id': 1, 'nombre': 'daniel desde el excel', 'apellido': 'sanchez', 'correo': 'micorreo20@gmail.com', 'pass': 'abc123', 'telefono': 985271741, 'direccion1': 'algun lugar', 'ciudad': 'de la mancha', 'p...</var>
+<status status="PASS" start="2025-09-06T23:22:26.344898" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-09-06T23:22:26.360507" level="INFO">${id} = 2</msg>
+<var>${id}</var>
+<arg>${row}[id]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-09-06T23:22:26.360507" elapsed="0.000000"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>'${id}' == '${excelID}'</arg>
+<arg>Set Test Variable</arg>
+<arg>${user}</arg>
+<arg>${row}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2025-09-06T23:22:26.360507" elapsed="0.000000"/>
+</kw>
+<var name="${row}">{'id': 2, 'nombre': 'daniel', 'apellido': 'sanchez', 'correo': 'micorreo21@gmail.com', 'pass': 'abc123', 'telefono': 985271741, 'direccion1': 'algun lugar', 'ciudad': 'de la mancha', 'postcode': 80180...</var>
+<status status="PASS" start="2025-09-06T23:22:26.344898" elapsed="0.015609"/>
+</iter>
+<iter>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-09-06T23:22:26.360507" level="INFO">${id} = 3</msg>
+<var>${id}</var>
+<arg>${row}[id]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-09-06T23:22:26.360507" elapsed="0.000000"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>'${id}' == '${excelID}'</arg>
+<arg>Set Test Variable</arg>
+<arg>${user}</arg>
+<arg>${row}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2025-09-06T23:22:26.360507" elapsed="0.000000"/>
+</kw>
+<var name="${row}">{'id': 3, 'nombre': 'daniel', 'apellido': 'sanchez', 'correo': 'micorreo22@gmail.com', 'pass': 'abc123', 'telefono': 985271741, 'direccion1': 'algun lugar', 'ciudad': 'de la mancha', 'postcode': 80180...</var>
+<status status="PASS" start="2025-09-06T23:22:26.360507" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-09-06T23:22:26.360507" level="INFO">${id} = 4</msg>
+<var>${id}</var>
+<arg>${row}[id]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-09-06T23:22:26.360507" elapsed="0.000000"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>'${id}' == '${excelID}'</arg>
+<arg>Set Test Variable</arg>
+<arg>${user}</arg>
+<arg>${row}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2025-09-06T23:22:26.360507" elapsed="0.000000"/>
+</kw>
+<var name="${row}">{'id': 4, 'nombre': 'daniel', 'apellido': 'sanchez', 'correo': 'micorreo23@gmail.com', 'pass': 'abc123', 'telefono': 985271741, 'direccion1': 'algun lugar', 'ciudad': 'de la mancha', 'postcode': 80180...</var>
+<status status="PASS" start="2025-09-06T23:22:26.360507" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-09-06T23:22:26.360507" level="INFO">${id} = 5</msg>
+<var>${id}</var>
+<arg>${row}[id]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-09-06T23:22:26.360507" elapsed="0.000000"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>'${id}' == '${excelID}'</arg>
+<arg>Set Test Variable</arg>
+<arg>${user}</arg>
+<arg>${row}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2025-09-06T23:22:26.360507" elapsed="0.000000"/>
+</kw>
+<var name="${row}">{'id': 5, 'nombre': 'daniel', 'apellido': 'sanchez', 'correo': 'micorreo24@gmail.com', 'pass': 'abc123', 'telefono': 985271741, 'direccion1': 'algun lugar', 'ciudad': 'de la mancha', 'postcode': 80180...</var>
+<status status="PASS" start="2025-09-06T23:22:26.360507" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-09-06T23:22:26.376132" level="INFO">${id} = 6</msg>
+<var>${id}</var>
+<arg>${row}[id]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-09-06T23:22:26.360507" elapsed="0.015625"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>'${id}' == '${excelID}'</arg>
+<arg>Set Test Variable</arg>
+<arg>${user}</arg>
+<arg>${row}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2025-09-06T23:22:26.376132" elapsed="0.000000"/>
+</kw>
+<var name="${row}">{'id': 6, 'nombre': 'daniel', 'apellido': 'sanchez', 'correo': 'micorreo25@gmail.com', 'pass': 'abc123', 'telefono': 985271741, 'direccion1': 'algun lugar', 'ciudad': 'de la mancha', 'postcode': 80180...</var>
+<status status="PASS" start="2025-09-06T23:22:26.360507" elapsed="0.015625"/>
+</iter>
+<iter>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-09-06T23:22:26.376132" level="INFO">${id} = 7</msg>
+<var>${id}</var>
+<arg>${row}[id]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-09-06T23:22:26.376132" elapsed="0.000000"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Set Test Variable" owner="BuiltIn">
+<msg time="2025-09-06T23:22:26.376132" level="INFO">${user} = {'id': 7, 'nombre': 'daniel', 'apellido': 'sanchez', 'correo': 'micorreo26@gmail.com', 'pass': 'abc123', 'telefono': 985271741, 'direccion1': 'algun lugar', 'ciudad': 'de la mancha', 'postcode': 80180...</msg>
+<arg>${user}</arg>
+<arg>${row}</arg>
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<status status="PASS" start="2025-09-06T23:22:26.376132" elapsed="0.000000"/>
+</kw>
+<arg>'${id}' == '${excelID}'</arg>
+<arg>Set Test Variable</arg>
+<arg>${user}</arg>
+<arg>${row}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2025-09-06T23:22:26.376132" elapsed="0.000000"/>
+</kw>
+<var name="${row}">{'id': 7, 'nombre': 'daniel', 'apellido': 'sanchez', 'correo': 'micorreo26@gmail.com', 'pass': 'abc123', 'telefono': 985271741, 'direccion1': 'algun lugar', 'ciudad': 'de la mancha', 'postcode': 80180...</var>
+<status status="PASS" start="2025-09-06T23:22:26.376132" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-09-06T23:22:26.376132" level="INFO">${id} = 8</msg>
+<var>${id}</var>
+<arg>${row}[id]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-09-06T23:22:26.376132" elapsed="0.000000"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>'${id}' == '${excelID}'</arg>
+<arg>Set Test Variable</arg>
+<arg>${user}</arg>
+<arg>${row}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2025-09-06T23:22:26.376132" elapsed="0.000000"/>
+</kw>
+<var name="${row}">{'id': 8, 'nombre': 'daniel', 'apellido': 'sanchez', 'correo': 'micorreo27@gmail.com', 'pass': 'abc124', 'telefono': 985271742, 'direccion1': 'algun lugar', 'ciudad': 'de la mancha', 'postcode': 80180...</var>
+<status status="PASS" start="2025-09-06T23:22:26.376132" elapsed="0.015625"/>
+</iter>
+<iter>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-09-06T23:22:26.391757" level="INFO">${id} = 9</msg>
+<var>${id}</var>
+<arg>${row}[id]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-09-06T23:22:26.391757" elapsed="0.000000"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>'${id}' == '${excelID}'</arg>
+<arg>Set Test Variable</arg>
+<arg>${user}</arg>
+<arg>${row}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2025-09-06T23:22:26.391757" elapsed="0.000000"/>
+</kw>
+<var name="${row}">{'id': 9, 'nombre': 'daniel', 'apellido': 'sanchez', 'correo': 'micorreo28@gmail.com', 'pass': 'abc125', 'telefono': 985271743, 'direccion1': 'algun lugar', 'ciudad': 'de la mancha', 'postcode': 80180...</var>
+<status status="PASS" start="2025-09-06T23:22:26.391757" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-09-06T23:22:26.391757" level="INFO">${id} = 10</msg>
+<var>${id}</var>
+<arg>${row}[id]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-09-06T23:22:26.391757" elapsed="0.000000"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>'${id}' == '${excelID}'</arg>
+<arg>Set Test Variable</arg>
+<arg>${user}</arg>
+<arg>${row}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2025-09-06T23:22:26.391757" elapsed="0.000000"/>
+</kw>
+<var name="${row}">{'id': 10, 'nombre': 'daniel', 'apellido': 'sanchez', 'correo': 'micorreo29@gmail.com', 'pass': 'abc126', 'telefono': 985271744, 'direccion1': 'algun lugar', 'ciudad': 'de la mancha', 'postcode': 8018...</var>
+<status status="PASS" start="2025-09-06T23:22:26.391757" elapsed="0.000000"/>
+</iter>
+<var>${row}</var>
+<value>@{data}</value>
+<status status="PASS" start="2025-09-06T23:22:26.344898" elapsed="0.046859"/>
+</for>
+<kw name="Read info to variables" owner="checkoutPage_kw">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-09-06T23:22:26.391757" level="INFO">{'id': 7, 'nombre': 'daniel', 'apellido': 'sanchez', 'correo': 'micorreo26@gmail.com', 'pass': 'abc123', 'telefono': 985271741, 'direccion1': 'algun lugar', 'ciudad': 'de la mancha', 'postcode': 8018080, 'pais': 'Chile', 'region': 'Araucania'}</msg>
+<arg>${userToRead}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-09-06T23:22:26.391757" elapsed="0.000000"/>
+</kw>
+<kw name="Set Test Variable" owner="BuiltIn">
+<msg time="2025-09-06T23:22:26.407384" level="INFO">${ID} = 7</msg>
+<arg>${ID}</arg>
+<arg>${userToRead}[id]</arg>
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<status status="PASS" start="2025-09-06T23:22:26.391757" elapsed="0.015627"/>
+</kw>
+<kw name="Set Test Variable" owner="BuiltIn">
+<msg time="2025-09-06T23:22:26.407384" level="INFO">${excelName} = daniel</msg>
+<arg>${excelName}</arg>
+<arg>${userToRead}[nombre]</arg>
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<status status="PASS" start="2025-09-06T23:22:26.407384" elapsed="0.000000"/>
+</kw>
+<kw name="Set Test Variable" owner="BuiltIn">
+<msg time="2025-09-06T23:22:26.407384" level="INFO">${excelLastname} = sanchez</msg>
+<arg>${excelLastname}</arg>
+<arg>${userToRead}[apellido]</arg>
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<status status="PASS" start="2025-09-06T23:22:26.407384" elapsed="0.000000"/>
+</kw>
+<kw name="Set Test Variable" owner="BuiltIn">
+<msg time="2025-09-06T23:22:26.423007" level="INFO">${excelMail} = micorreo26@gmail.com</msg>
+<arg>${excelMail}</arg>
+<arg>${userToRead}[correo]</arg>
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<status status="PASS" start="2025-09-06T23:22:26.407384" elapsed="0.015623"/>
+</kw>
+<kw name="Set Test Variable" owner="BuiltIn">
+<msg time="2025-09-06T23:22:26.423007" level="INFO">${excelPAss} = abc123</msg>
+<arg>${excelPAss}</arg>
+<arg>${userToRead}[pass]</arg>
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<status status="PASS" start="2025-09-06T23:22:26.423007" elapsed="0.000000"/>
+</kw>
+<kw name="Set Test Variable" owner="BuiltIn">
+<msg time="2025-09-06T23:22:26.440935" level="INFO">${excelPhone} = 985271741</msg>
+<arg>${excelPhone}</arg>
+<arg>${userToRead}[telefono]</arg>
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<status status="PASS" start="2025-09-06T23:22:26.423007" elapsed="0.018929"/>
+</kw>
+<kw name="Set Test Variable" owner="BuiltIn">
+<msg time="2025-09-06T23:22:26.447914" level="INFO">${excelAddres1} = algun lugar</msg>
+<arg>${excelAddres1}</arg>
+<arg>${userToRead}[direccion1]</arg>
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<status status="PASS" start="2025-09-06T23:22:26.441936" elapsed="0.006992"/>
+</kw>
+<kw name="Set Test Variable" owner="BuiltIn">
+<msg time="2025-09-06T23:22:26.455121" level="INFO">${excelCity} = de la mancha</msg>
+<arg>${excelCity}</arg>
+<arg>${userToRead}[ciudad]</arg>
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<status status="PASS" start="2025-09-06T23:22:26.448928" elapsed="0.006193"/>
+</kw>
+<kw name="Set Test Variable" owner="BuiltIn">
+<msg time="2025-09-06T23:22:26.462119" level="INFO">${excelPostCode} = 8018080</msg>
+<arg>${excelPostCode}</arg>
+<arg>${userToRead}[postcode]</arg>
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<status status="PASS" start="2025-09-06T23:22:26.456125" elapsed="0.005994"/>
+</kw>
+<kw name="Set Test Variable" owner="BuiltIn">
+<msg time="2025-09-06T23:22:26.467194" level="INFO">${excelCountry} = Chile</msg>
+<arg>${excelCountry}</arg>
+<arg>${userToRead}[pais]</arg>
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<status status="PASS" start="2025-09-06T23:22:26.463120" elapsed="0.004074"/>
+</kw>
+<kw name="Set Test Variable" owner="BuiltIn">
+<msg time="2025-09-06T23:22:26.467194" level="INFO">${excelRegion} = Araucania</msg>
+<arg>${excelRegion}</arg>
+<arg>${userToRead}[region]</arg>
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<status status="PASS" start="2025-09-06T23:22:26.467194" elapsed="0.000000"/>
+</kw>
+<arg>${user}</arg>
+<doc>Una vez capturado el usuario, tomamos la data y la dejamos disponible para el test</doc>
+<status status="PASS" start="2025-09-06T23:22:26.391757" elapsed="0.075437"/>
+</kw>
+<arg>${idVarPrincipal}</arg>
+<doc>Cargaremos archivo excel con usuarios en memoria, para luego recorrerlo y buscar el ID del usuario que queremos usar</doc>
+<status status="PASS" start="2025-09-06T23:22:26.313556" elapsed="0.153638"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-06T23:22:26.467194" level="INFO">Typing text 'daniel' into text field 'id=input-payment-firstname'.</msg>
+<arg>${name_inp}</arg>
+<arg>${excelName}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-06T23:22:26.467194" elapsed="0.342195"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-06T23:22:26.824976" level="INFO">Typing text 'sanchez' into text field 'id=input-payment-lastname'.</msg>
+<arg>${lastnmae_inp}</arg>
+<arg>${excelLastname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-06T23:22:26.809389" elapsed="0.361239"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-06T23:22:27.171627" level="INFO">Typing text 'micorreo26@gmail.com' into text field 'id=input-payment-email'.</msg>
+<arg>${email_inp}</arg>
+<arg>${excelMail}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-06T23:22:27.170628" elapsed="0.425019"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-06T23:22:27.595647" level="INFO">Typing text '985271741' into text field 'id=input-payment-telephone'.</msg>
+<arg>${phone_inp}</arg>
+<arg>${excelPhone}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-06T23:22:27.595647" elapsed="0.349775"/>
+</kw>
+<doc>Completara datos personales</doc>
+<status status="PASS" start="2025-09-06T23:22:24.313221" elapsed="3.632201"/>
+</kw>
+<kw name="Fillup address data" owner="checkoutPage_kw">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-06T23:22:27.945422" level="INFO">Typing text 'algun lugar' into text field 'id=input-payment-address-1'.</msg>
+<arg>${address1_inp}</arg>
+<arg>${excelAddres1}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-06T23:22:27.945422" elapsed="0.383529"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-06T23:22:28.328951" level="INFO">Typing text 'de la mancha' into text field 'id=input-payment-city'.</msg>
+<arg>${city_inp}</arg>
+<arg>${excelCity}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-06T23:22:28.328951" elapsed="0.386235"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-06T23:22:28.715186" level="INFO">Typing text '8018080' into text field 'id=input-payment-postcode'.</msg>
+<arg>${postcode_inp}</arg>
+<arg>${excelPostCode}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-06T23:22:28.715186" elapsed="0.348570"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2025-09-06T23:22:29.066758" level="INFO">Selecting options from selection list 'name=country_id' by label Chile.</msg>
+<arg>${country_inp}</arg>
+<arg>${excelCountry}</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2025-09-06T23:22:29.064754" elapsed="0.315499"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T23:22:31.382237" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T23:22:29.381262" elapsed="2.000975"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2025-09-06T23:22:31.382237" level="INFO">Selecting options from selection list 'name=zone_id' by label Araucania.</msg>
+<arg>${region_inp}</arg>
+<arg>${excelRegion}</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2025-09-06T23:22:31.382237" elapsed="0.258485"/>
+</kw>
+<doc>Completara datos de direccion</doc>
+<status status="PASS" start="2025-09-06T23:22:27.945422" elapsed="3.695300"/>
+</kw>
+<kw name="Fillup password data and continue to delivery" owner="checkoutPage_kw">
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2025-09-06T23:22:31.646762" level="INFO">Typing password into text field 'id=input-payment-password'.</msg>
+<msg time="2025-09-06T23:22:31.781338" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${pass_inp}</arg>
+<arg>${excelPAss}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-06T23:22:31.645756" elapsed="0.365987"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2025-09-06T23:22:32.011743" level="INFO">Typing password into text field 'id=input-payment-confirm'.</msg>
+<msg time="2025-09-06T23:22:32.143919" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${passConfirm_inp}</arg>
+<arg>${excelPAss}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-06T23:22:32.011743" elapsed="0.353071"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-09-06T23:22:32.364814" level="INFO">Clicking element 'xpath=//*[@id="collapse-payment-address"]/div/div[4]/div/input[1]'.</msg>
+<arg>${acceptTermsAndCondition_chk}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-06T23:22:32.364814" elapsed="0.268766"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-09-06T23:22:33.037152" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="screenshot-createdAccount-1.png"&gt;&lt;img src="screenshot-createdAccount-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>screenshot-createdAccount-{index}.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-09-06T23:22:32.633580" elapsed="0.403572"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-09-06T23:22:33.039197" level="INFO">Clicking button 'xpath=//*[@id="button-register"]'.</msg>
+<arg>${continueToDeliveryAsNew_btn}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-06T23:22:33.038146" elapsed="0.288803"/>
+</kw>
+<doc>Ingresara campos de contraseña de forma segura, usando *** para mantener privacidad</doc>
+<status status="PASS" start="2025-09-06T23:22:31.644761" elapsed="1.682188"/>
+</kw>
+<kw name="Deliver Detailsy continue" owner="checkoutPage_kw">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T23:22:35.332812" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T23:22:33.330961" elapsed="2.001851"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-09-06T23:22:35.686741" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-Checkout-1.png"&gt;&lt;img src="selenium-Checkout-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>selenium-Checkout-{index}.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-09-06T23:22:35.332812" elapsed="0.353929"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-09-06T23:22:35.686741" level="INFO">Clicking button 'xpath=//*[@id="button-shipping-address"]'.</msg>
+<arg>${continueToDeliveryMethodAsNew_btn}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-06T23:22:35.686741" elapsed="0.281881"/>
+</kw>
+<doc>Pasamos por seccion con los detalles del delivery</doc>
+<status status="PASS" start="2025-09-06T23:22:33.329960" elapsed="2.638662"/>
+</kw>
+<kw name="Validate Type and shippingRate" owner="checkoutPage_kw">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T23:22:38.979335" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T23:22:35.977845" elapsed="3.001490"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-06T23:22:39.053592" level="INFO">${message} = Flat Shipping Rate - $5.00</msg>
+<var>${message}</var>
+<arg>${shippingDescription}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-06T23:22:38.979335" elapsed="0.074257"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${message}</arg>
+<arg>${expectedShipping}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-09-06T23:22:39.053592" elapsed="0.001004"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-09-06T23:22:39.395827" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="screenshot-deliveryMehotd-1.png"&gt;&lt;img src="screenshot-deliveryMehotd-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>screenshot-deliveryMehotd-{index}.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-09-06T23:22:39.055590" elapsed="0.340237"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-09-06T23:22:39.397822" level="INFO">Clicking button 'xpath=//div[@id='collapse-shipping-method']//input[@type='button' and @id='button-shipping-method']'.</msg>
+<arg>${continueToPayment_btn}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-06T23:22:39.396773" elapsed="0.279975"/>
+</kw>
+<doc>Revisamos que el tipo y el shipping sea el solicitado en prueba</doc>
+<status status="PASS" start="2025-09-06T23:22:35.968622" elapsed="3.708126"/>
+</kw>
+<kw name="Select payment method" owner="checkoutPage_kw">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T23:22:41.683457" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T23:22:39.682752" elapsed="2.000705"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-09-06T23:22:41.683457" level="INFO">Clicking button 'xpath=//label[contains(normalize-space(.), 'Cash On Delivery')]/input[@type='radio' and @name='payment_method']'.</msg>
+<arg>${cashOnDelivery_radioBtn}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-06T23:22:41.683457" elapsed="0.272766"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2025-09-06T23:22:41.958228" level="INFO">Selecting checkbox 'xpath=//*[@id="collapse-payment-method"]/div/div[3]/div/input[1]'.</msg>
+<arg>${acceptTermsAndConditionfromPayment_chk}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-06T23:22:41.957225" elapsed="0.344028"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-09-06T23:22:42.645379" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="screenshot-paymentMethod-1.png"&gt;&lt;img src="screenshot-paymentMethod-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>screenshot-paymentMethod-{index}.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-09-06T23:22:42.301253" elapsed="0.344126"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-09-06T23:22:42.647362" level="INFO">Clicking button 'xpath=//input[@type='button' and @id='button-payment-method']'.</msg>
+<arg>${continueToConfirmOrder_btn}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-06T23:22:42.646374" elapsed="0.279793"/>
+</kw>
+<doc>Seleccionamos metodo de pago, en este caso Cash On Delivery</doc>
+<status status="PASS" start="2025-09-06T23:22:39.678752" elapsed="3.247415"/>
+</kw>
+<kw name="Check final amounts" owner="checkoutPage_kw">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T23:22:44.926837" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T23:22:42.926167" elapsed="2.000670"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-09-06T23:22:45.311546" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="screenshot-confirmOrder-1.png"&gt;&lt;img src="screenshot-confirmOrder-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>screenshot-confirmOrder-{index}.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-09-06T23:22:44.926837" elapsed="0.384709"/>
+</kw>
+<kw name="Get Table Cell" owner="SeleniumLibrary">
+<msg time="2025-09-06T23:22:45.530429" level="INFO">${test} = Product 14</msg>
+<var>${test}</var>
+<arg>${resumeOrder_tbl}</arg>
+<arg>row=2</arg>
+<arg>column=2</arg>
+<doc>Returns contents of a table cell.</doc>
+<status status="PASS" start="2025-09-06T23:22:45.311546" elapsed="0.218883"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-09-06T23:22:45.530429" level="INFO">Product 14</msg>
+<arg>${test}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-09-06T23:22:45.530429" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2025-09-06T23:22:42.926167" elapsed="2.604262"/>
+</kw>
+<kw name="Confirm order" owner="checkoutPage_kw">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-09-06T23:22:45.547470" level="INFO">Clicking button 'xpath=//*[@id="button-confirm"]'.</msg>
+<arg>${confirmOrder_btn}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-06T23:22:45.546411" elapsed="0.297788"/>
+</kw>
+<status status="PASS" start="2025-09-06T23:22:45.530429" elapsed="0.314033"/>
+</kw>
+<kw name="Validate order has been placed" owner="checkoutPage_kw">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T23:22:47.848916" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T23:22:45.847841" elapsed="2.001075"/>
+</kw>
+<kw name="Get Title" owner="SeleniumLibrary">
+<msg time="2025-09-06T23:22:47.864588" level="INFO">${order_placed} = Your order has been placed!</msg>
+<var>${order_placed}</var>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2025-09-06T23:22:47.848916" elapsed="0.015672"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${order_placed}</arg>
+<arg>${orderPlaced}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-09-06T23:22:47.864588" elapsed="0.000000"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-06T23:22:47.936720" level="INFO">${full_text} = Your order has been placed!</msg>
+<var>${full_text}</var>
+<arg>${placeholder_order}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-06T23:22:47.864588" elapsed="0.072132"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-09-06T23:22:47.936720" level="INFO">Your order has been placed!</msg>
+<arg>message=${full_text}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-09-06T23:22:47.936720" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${full_text}</arg>
+<arg>${orderPlaced}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-09-06T23:22:47.936720" elapsed="0.000000"/>
+</kw>
+<doc>Validaremos que la orden ha sido finalizada correctamente</doc>
+<status status="PASS" start="2025-09-06T23:22:45.846339" elapsed="2.090381"/>
+</kw>
+<kw name="Go to history page" owner="checkoutPage_kw">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-09-06T23:22:47.936720" level="INFO">Clicking element '//*[@id="content"]/p[2]/a[2]'.</msg>
+<arg>${acoountHistory_link}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-06T23:22:47.936720" elapsed="0.828296"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T23:22:50.766286" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T23:22:48.765969" elapsed="2.000317"/>
+</kw>
+<doc>Iremos al Historial de compras</doc>
+<status status="PASS" start="2025-09-06T23:22:47.936720" elapsed="2.829566"/>
+</kw>
+<kw name="Check order" owner="history_kw">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-09-06T23:22:50.766286" level="INFO">Clicking element 'xpath=(//table[contains(@class,'table') and contains(@class,'table-bordered')]//tbody/tr)[1]//a[contains(@class,'btn-info')]'.</msg>
+<arg>${orderDetail_btn}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-06T23:22:50.766286" elapsed="0.756332"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T23:22:53.525088" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T23:22:51.522618" elapsed="2.002470"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-09-06T23:22:53.901962" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-history-1.png"&gt;&lt;img src="selenium-history-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>selenium-history-{index}.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-09-06T23:22:53.525088" elapsed="0.376874"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-06T23:22:53.967827" level="INFO">${orderDetails} = Order ID: #%s #26866
+Date Added: 07/09/2025 Payment Method: Cash On Delivery
+Shipping Method: Flat Shipping Rate</msg>
+<var>${orderDetails}</var>
+<arg>${orderDetails_tbl}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-06T23:22:53.902960" elapsed="0.064867"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-09-06T23:22:53.967827" level="INFO">Order ID: #%s #26866
+Date Added: 07/09/2025 Payment Method: Cash On Delivery
+Shipping Method: Flat Shipping Rate</msg>
+<arg>${orderDetails}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-09-06T23:22:53.967827" elapsed="0.000000"/>
+</kw>
+<kw name="Get Element Count" owner="SeleniumLibrary">
+<msg time="2025-09-06T23:22:54.014685" level="INFO">${rows} = 1</msg>
+<var>${rows}</var>
+<arg>${productDetailsCount_tbl}</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<status status="PASS" start="2025-09-06T23:22:53.967827" elapsed="0.046858"/>
+</kw>
+<kw name="Create List" owner="BuiltIn">
+<msg time="2025-09-06T23:22:54.014685" level="INFO">@{products} = [ ]</msg>
+<var>@{products}</var>
+<doc>Returns a list containing given items.</doc>
+<status status="PASS" start="2025-09-06T23:22:54.014685" elapsed="0.000000"/>
+</kw>
+<for flavor="IN RANGE">
+<iter>
+<kw name="Get Table Cell" owner="SeleniumLibrary">
+<msg time="2025-09-06T23:22:54.170670" level="INFO">${name} = Product Name</msg>
+<var>${name}</var>
+<arg>${productDetails_tbl}</arg>
+<arg>${i}</arg>
+<arg>1</arg>
+<doc>Returns contents of a table cell.</doc>
+<status status="PASS" start="2025-09-06T23:22:54.030348" elapsed="0.140322"/>
+</kw>
+<kw name="Get Table Cell" owner="SeleniumLibrary">
+<msg time="2025-09-06T23:22:54.311346" level="INFO">${model} = Model</msg>
+<var>${model}</var>
+<arg>${productDetails_tbl}</arg>
+<arg>${i}</arg>
+<arg>2</arg>
+<doc>Returns contents of a table cell.</doc>
+<status status="PASS" start="2025-09-06T23:22:54.170670" elapsed="0.140676"/>
+</kw>
+<kw name="Get Table Cell" owner="SeleniumLibrary">
+<msg time="2025-09-06T23:22:54.436264" level="INFO">${quantity} = Quantity</msg>
+<var>${quantity}</var>
+<arg>${productDetails_tbl}</arg>
+<arg>${i}</arg>
+<arg>3</arg>
+<doc>Returns contents of a table cell.</doc>
+<status status="PASS" start="2025-09-06T23:22:54.311346" elapsed="0.124918"/>
+</kw>
+<kw name="Get Table Cell" owner="SeleniumLibrary">
+<msg time="2025-09-06T23:22:54.592978" level="INFO">${price} = Price</msg>
+<var>${price}</var>
+<arg>${productDetails_tbl}</arg>
+<arg>${i}</arg>
+<arg>4</arg>
+<doc>Returns contents of a table cell.</doc>
+<status status="PASS" start="2025-09-06T23:22:54.436264" elapsed="0.156714"/>
+</kw>
+<kw name="Get Table Cell" owner="SeleniumLibrary">
+<msg time="2025-09-06T23:22:54.733556" level="INFO">${total} = Total</msg>
+<var>${total}</var>
+<arg>${productDetails_tbl}</arg>
+<arg>${i}</arg>
+<arg>5</arg>
+<doc>Returns contents of a table cell.</doc>
+<status status="PASS" start="2025-09-06T23:22:54.593983" elapsed="0.139573"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2025-09-06T23:22:54.733556" level="INFO">&amp;{product} = { name=Product Name | model=Model | quantity=Quantity | price=Price | total=Total }</msg>
+<var>&amp;{product}</var>
+<arg>name=${name}</arg>
+<arg>model=${model}</arg>
+<arg>quantity=${quantity}</arg>
+<arg>price=${price}</arg>
+<arg>total=${total}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2025-09-06T23:22:54.733556" elapsed="0.000000"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${products}</arg>
+<arg>${product}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2025-09-06T23:22:54.733556" elapsed="0.000000"/>
+</kw>
+<var name="${i}">1</var>
+<status status="PASS" start="2025-09-06T23:22:54.014685" elapsed="0.718871"/>
+</iter>
+<var>${i}</var>
+<value>1</value>
+<value>${rows + 1}</value>
+<status status="PASS" start="2025-09-06T23:22:54.014685" elapsed="0.718871"/>
+</for>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2025-09-06T23:22:54.733556" level="INFO">&amp;{expected1} = { name=iMac | model=Product 14 | quantity=1 | price=$100.00 | total=$100.00 }</msg>
+<var>&amp;{expected1}</var>
+<arg>name=iMac</arg>
+<arg>model=Product 14</arg>
+<arg>quantity=1</arg>
+<arg>price=$100.00</arg>
+<arg>total=$100.00</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2025-09-06T23:22:54.733556" elapsed="0.000000"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2025-09-06T23:22:54.733556" level="INFO">&amp;{expected2} = { name=iPod Classic | model=product20 | quantity=1 | price=$100.00 | total=$100.00 }</msg>
+<var>&amp;{expected2}</var>
+<arg>name=iPod Classic</arg>
+<arg>model=product20</arg>
+<arg>quantity=1</arg>
+<arg>price=$100.00</arg>
+<arg>total=$100.00</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2025-09-06T23:22:54.733556" elapsed="0.000000"/>
+</kw>
+<kw name="Create List" owner="BuiltIn">
+<msg time="2025-09-06T23:22:54.749198" level="INFO">@{expected} = [ {'name': 'iMac', 'model': 'Product 14', 'quantity': '1', 'price': '$100.00', 'total': '$100.00'} | {'name': 'iPod Classic', 'model': 'product20', 'quantity': '1', 'price': '$100.00', 'total': '$100....</msg>
+<var>@{expected}</var>
+<arg>${expected1}</arg>
+<arg>${expected2}</arg>
+<doc>Returns a list containing given items.</doc>
+<status status="PASS" start="2025-09-06T23:22:54.749198" elapsed="0.000000"/>
+</kw>
+<kw name="Lists Should Be Equal" owner="Collections">
+<arg>@{products}</arg>
+<arg>@{expected}</arg>
+<doc>Fails if given lists are unequal.</doc>
+<status status="PASS" start="2025-09-06T23:22:54.749198" elapsed="0.000000"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-09-06T23:22:54.827143" level="INFO">${statusDetail} = 07/09/2025 Pending</msg>
+<var>${statusDetail}</var>
+<arg>${orderHistory_tbl}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-06T23:22:54.749198" elapsed="0.078999"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-09-06T23:22:54.829198" level="INFO">07/09/2025 Pending</msg>
+<arg>${statusDetail}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-09-06T23:22:54.828197" elapsed="0.001001"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${statusDetail}</arg>
+<arg>${pending_txt}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-09-06T23:22:54.830204" elapsed="0.000000"/>
+</kw>
+<doc>Esto esta diseñado para obtener la tabla con los items, recorrerla, realizar un diccionario de dicha tabla en python,
+y posteriormente en base a listas realizar la comparacion de todos los elementos de las tablas</doc>
+<status status="PASS" start="2025-09-06T23:22:50.766286" elapsed="4.064916"/>
+</kw>
+<kw name="Logout from page" owner="history_kw">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-09-06T23:22:54.836191" level="INFO">Clicking element 'xpath=//a[@title='My Account']'.</msg>
+<arg>${myAccount_btn}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-06T23:22:54.835191" elapsed="0.273353"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-06T23:22:57.111272" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-06T23:22:55.109543" elapsed="2.001729"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-09-06T23:22:57.111272" level="INFO">Clicking element 'xpath=//ul[contains(@class,'dropdown-menu-right')]//a[text()='Logout']'.</msg>
+<arg>${maLogout_btn}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-06T23:22:57.111272" elapsed="0.881223"/>
+</kw>
+<status status="PASS" start="2025-09-06T23:22:54.833212" elapsed="3.159283"/>
+</kw>
+<status status="PASS" start="2025-09-06T23:21:57.882377" elapsed="60.112124"/>
+</test>
+<doc>El siguiente test comenzara cargando la pagina, para posteriormente agregar los productos, validarlos dentro del carro  y comenzar checkout
+Durante el proceso de Checkout este crea una cuenta nueva, sacando los datos desde excel adjunto
+La Variable  idVarPrincipal  nos permite iterar sobre el archivo excel para buscar ese ID e ingresarlo como cuenta nueva</doc>
+<status status="PASS" start="2025-09-06T23:21:57.819423" elapsed="60.179067"/>
+</suite>
+<status status="PASS" start="2025-09-06T23:21:12.431074" elapsed="105.577528"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Test" id="s1" pass="3" fail="0" skip="0">Test</stat>
+<stat name="puntosExtrasTest" id="s1-s1" pass="1" fail="0" skip="0">Test.puntosExtrasTest</stat>
+<stat name="puntosExtrasTest II" id="s1-s2" pass="1" fail="0" skip="0">Test.puntosExtrasTest II</stat>
+<stat name="shoppingCreatingNewAccount" id="s1-s3" pass="1" fail="0" skip="0">Test.shoppingCreatingNewAccount</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
